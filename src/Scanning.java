@@ -46,9 +46,13 @@ public class Scanning {
 
         if (key.equals("game-tour")){
             GameTour1.start();
+            if(!GameTour1.isAlive())
             GameTour2.start();
+            if(!GameTour2.isAlive())
             GameTour3.start();
+            if(!GameTour3.isAlive())
             GameTour4.start();
+            if(!GameTour4.isAlive())
             GameTour5.start();
             //ScanGameTour("http://game-tournaments.com/dota-2/bets", maxI);
             //ScanGameTour("http://game-tournaments.com/csgo/bets", maxI);
@@ -81,15 +85,24 @@ public class Scanning {
 
         if(key.equals("sport")) {
             OneX1.start();
+            if(!OneX1.isAlive())
             OneX2.start();
+            if(!OneX2.isAlive())
             OneX3.start();
+            if(!OneX3.isAlive())
             OneX4.start();
+            if(!OneX4.isAlive())
             OneX5.start();
+            if(!OneX5.isAlive())
             OneX6.start();
             BetFair1.start();
+            if(!BetFair1.isAlive())
             BetFair2.start();
+            if(!BetFair2.isAlive())
             BetFair3.start();
+            if(!BetFair3.isAlive())
             BetFair4.start();
+            if(!BetFair4.isAlive())
             BetFair5.start();
             //ScanBetFair("https://www.betfair.com/sport/tennis");
             //ScanBetFair("https://www.betfair.com/sport/volleyball");
