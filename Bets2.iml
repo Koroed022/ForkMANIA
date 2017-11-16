@@ -56,5 +56,8 @@
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:8.1.12.v20130726" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:8.1.12.v20130726" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:8.1.12.v20130726" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-htmlunit-driver:2.52.0" level="project" />
+    <orderEntry type="library" name="telegrambots-3.4-jar-with-dependencies" level="project" />
+    <orderEntry type="library" name="S0S1bot" level="project" />
   </component>
 </module>
