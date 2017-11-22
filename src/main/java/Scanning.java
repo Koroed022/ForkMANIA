@@ -25,8 +25,7 @@ public class Scanning implements Runnable{
 
 
         if (key.equals("test")) {
-            ScanPlayNow("https://www.playnow.com/sports/esports");
-            System.out.println("Chto dela");
+
         }
 
         if (key.equals("start")) {
@@ -46,6 +45,7 @@ public class Scanning implements Runnable{
                     ScanGameTour("http://game-tournaments.com/overwatch/bets", maxI);
 
 
+                    ScanPlayNow("https://www.playnow.com/sports/esports");
                     ScanBetFair("https://www.betfair.com/sport/e-sports");
                     Scan1X("https://1xbet26.com/line/eSports/");
                     ScanWePlay("https://weplay.tv/bets/ls");
@@ -55,6 +55,8 @@ public class Scanning implements Runnable{
                     CountMoney.Inverse2(BetsBetFair, BetsBetSpawn, "BetFair + BetSpawn");
                     CountMoney.ForAllBets(BetsWEPLAY, BetsSNG, BetsGG, Bets1X);
                     CountMoney.ForAllBets(BetsWEPLAY, BetsBetSpawn, BetsGG, Bets1X);
+                    CountMoney.ForAllBets(BetsBetFair, BetsBetSpawn, BetsGG, Bets1X);
+                    CountMoney.ForAllBets(BetsBetFair, BetsPlayNow, BetsGG, Bets1X);
 
                     BetsBetSpawn.clear();
                     BetsBetFair.clear();

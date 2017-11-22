@@ -9,8 +9,6 @@ import org.telegram.telegrambots.logging.BotLogger;
 public class JsonOut {
     public static void setJson(String site1, String site2, String page1, String page2, String name1, String name2, Double coef1, Double coef2, double stavka1, double stavka2, double priz1, double priz2){
         JSONObject Json = new JSONObject();
-
-
         Json.put("site1",site1);
         Json.put("site2",site2);
         Json.put("page1",page1);
