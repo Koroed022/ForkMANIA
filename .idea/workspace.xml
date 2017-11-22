@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="199280c4-e341-49e1-866d-645864d3a24f" name="Default" comment="Forker v1.0">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/TeleBot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="199280c4-e341-49e1-866d-645864d3a24f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" afterPath="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Scanning.java" afterPath="$PROJECT_DIR$/src/main/java/Scanning.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,13 +31,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scanning.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Scanning.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="183" column="100" lean-forward="true" selection-start-line="183" selection-start-column="100" selection-end-line="183" selection-end-column="100" />
+            <state relative-caret-position="120">
+              <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#703#714#0" expanded="true" />
                 <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
@@ -47,31 +46,6 @@
                 <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BotHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2334#2335#0" expanded="true" />
-                <element signature="e#2371#2372#0" expanded="true" />
-                <element signature="e#2440#2441#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/Token.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -198,6 +172,14 @@
       <find>Billy Harris</find>
       <find>Harris</find>
       <find>eventInfoCenter</find>
+      <find>&lt;td class=&quot;eventInfoCenter&quot;&gt; &lt;a href=&quot;</find>
+      <find>&quot; class=&quot;eventLink&quot;&gt;</find>
+      <find>span5&quot;&gt;</find>
+      <find>&lt;span id=&quot;market-row</find>
+      <find>Betting Rules Apply&quot; href=&quot;&quot;&gt;</find>
+      <find>Crazy Japanese Game</find>
+      <find>.&quot; href=&quot;&quot;&gt;</find>
+      <find>&quot; href=&quot;&quot;&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -232,9 +214,9 @@
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/Commands.java" />
         <option value="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
         <option value="$PROJECT_DIR$/src/main/java/CountMoney.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Scanning.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Scanning.java" />
       </list>
     </option>
   </component>
@@ -486,7 +468,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510589374755</updated>
-      <workItem from="1511265220812" duration="34520000" />
+      <workItem from="1511265220812" duration="38622000" />
     </task>
     <task id="LOCAL-00001" summary="Работает v0.1">
       <created>1510634553768</created>
@@ -537,11 +519,25 @@
       <option name="project" value="LOCAL" />
       <updated>1511279726928</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Forker v1.1">
+      <created>1511346072921</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1511346072921</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Forker v1.1">
+      <created>1511346187626</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1511346187626</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34520000" />
+    <option name="totallyTimeSpent" value="38622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -570,7 +566,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.54833597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3534073" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -591,14 +587,15 @@
     <MESSAGE value="Работает v0.3" />
     <MESSAGE value="Работает v0.4" />
     <MESSAGE value="Forker v1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.0" />
+    <MESSAGE value="Forker v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Scanning.java</url>
-          <line>98</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
@@ -622,12 +619,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Scanning.java</url>
-          <line>174</line>
+          <line>191</line>
           <properties />
-          <option name="timeStamp" value="136" />
+          <option name="timeStamp" value="137" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="137" />
+      <option name="time" value="138" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -645,6 +642,7 @@
           <caret line="144" column="31" lean-forward="false" selection-start-line="144" selection-start-column="31" selection-end-line="144" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#703#714#0" expanded="true" />
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
@@ -969,20 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TeleBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1055,22 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="183" column="100" lean-forward="true" selection-start-line="183" selection-start-column="100" selection-end-line="183" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/Token.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1081,13 +1049,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+        <state relative-caret-position="170">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2334#2335#0" expanded="true" />
             <element signature="e#2371#2372#0" expanded="true" />
+            <element signature="e#2406#2407#0" expanded="true" />
             <element signature="e#2440#2441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TeleBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#703#714#0" expanded="true" />
+            <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
           </folding>
         </state>
       </provider>

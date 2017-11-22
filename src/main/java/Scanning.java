@@ -13,6 +13,7 @@ public class Scanning implements Runnable{
     public static ArrayList<BetCreate> BetsGG = new ArrayList<BetCreate>();
     public static ArrayList<BetCreate> BetsBetFair = new ArrayList<BetCreate>();
     public static ArrayList<BetCreate> BetsBetSpawn = new ArrayList<BetCreate>();
+    public static ArrayList<BetCreate> BetsBetWay = new ArrayList<BetCreate>();
 
 
 
@@ -178,23 +179,20 @@ public class Scanning implements Runnable{
                     .connect(site)
                     // .cookies(login.cookies()) //use this with any page you parse. it will log you in
                     .get();
-            System.out.println(doc.toString());
+            //System.out.println(doc.toString());
             String manyInf[]  = doc.toString().split("<tr id=\"event-row-");
             String manycoefs[];
-            String coefInf = doc.toString().split("data-bindable collectionitem=\"marketingBar")[1];
+            String names[];
 
             //System.out.println(manyInf);
-              String sport = site.split("line/")[1].replaceAll("/","");
+              String sport = "ESPORT";
             int i = 1,betCount;
             betCount = manyInf.length;
-            String coef1,coef2,name1,name2,names,page;
+            String coef1,coef2,name1,name2,page;
             while(i < betCount) {
-                while (manyInf[i].split(" — ", -1).length - 1 < 1) {
-                    i++;
-                }
-                page ="https://1xxxc.xyz/line/" + manyInf[i].split("<a href=\"line/")[1].split("\" class=\"c-events")[0];
-                names = manyInf[i].split("span class=\"n\" title=\"")[1].split("   \"> ")[0];
-                name1 = names.split(" —")[0];
+                page  = manyInf[i].split("<td class=\"eventInfoCenter\"> <a href=\"")[1].split("\" class=\"eventLink\">")[0];
+                names = manyInf[i].split("span5\"> ");
+                name1 = names[1].split(" <span id=\"market-row")[0];
                 name1 = name1.replaceAll(" Game ", "map")
                         .replaceAll("aAa","Team aAa")
                         .replaceAll("Ninjas in Pyjamas","NiP")
@@ -210,7 +208,7 @@ public class Scanning implements Runnable{
                         .replaceAll("BP","Blue Pikachu")
                         .replaceAll("Vega","Vega Squadron");
 
-                name2 = names.split(" — ")[1];
+                name2 = names[2].split(" <span id=\"market-row")[0];
                 name2 = name2.replaceAll(" Game ", "map")
                         .replaceAll("aAa","Team aAa")
                         .replaceAll("Ninjas in Pyjamas","NiP")
@@ -227,23 +225,23 @@ public class Scanning implements Runnable{
                         .replaceAll("Vega","Vega Squadron");
 
 
-                manycoefs = manyInf[i].split("data-coef=\"");
-                coef1 = manycoefs[1].split("\" data-evid=\"")[0];
-                coef2 = manycoefs[2].split("\" data-evid=\"")[0];
-                if (coef1.equals("-")) {
+                manycoefs = manyInf[i].split("\" href=\"\"> ");
+                coef1 = manycoefs[1].split(" </a> <span id=\"price-suspend")[0];
+                coef2 = manycoefs[2].split(" </a> <span id=\"price-suspend")[0];
+                if (coef1.equals(" ")) {
                     coef1 = "0";
                     coef2 = "0";
                 }
-                //System.out.println(" " + coef1 + " " + coef2 + "\t" + name1 + " " + name2 );
-                Bets1X.add(new BetCreate(
+                System.out.println(" " + coef1 + " " + coef2 + "\t" + name1 + " " + name2 );
+                BetsBetWay.add(new BetCreate(
                         name1,
                         name2,
                         Double.parseDouble(coef1),
                         Double.parseDouble(coef2),
-                        "1XBET",
+                        "BetWay",
                         sport,
                         page));
-                i++;
+                i+=2;
             }
         }catch (Exception e) {
             e.getMessage();
