@@ -34,11 +34,11 @@
       <file leaf-file-name="Scanning.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+            <state relative-caret-position="392">
+              <caret line="240" column="32" lean-forward="false" selection-start-line="240" selection-start-column="32" selection-end-line="240" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#703#714#0" expanded="true" />
+                <element signature="e#704#715#0" expanded="true" />
                 <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
@@ -468,7 +468,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510589374755</updated>
-      <workItem from="1511265220812" duration="38622000" />
+      <workItem from="1511265220812" duration="39277000" />
     </task>
     <task id="LOCAL-00001" summary="Работает v0.1">
       <created>1510634553768</created>
@@ -533,11 +533,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511346187626</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Forker v1.1 with scan PlayNow">
+      <created>1511350427326</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1511350427326</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38622000" />
+    <option name="totallyTimeSpent" value="39277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -588,7 +595,8 @@
     <MESSAGE value="Работает v0.4" />
     <MESSAGE value="Forker v1.0" />
     <MESSAGE value="Forker v1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.1" />
+    <MESSAGE value="Forker v1.1 with scan PlayNow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.1 with scan PlayNow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -623,8 +631,14 @@
           <properties />
           <option name="timeStamp" value="137" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scanning.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="138" />
+      <option name="time" value="141" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -642,7 +656,7 @@
           <caret line="144" column="31" lean-forward="false" selection-start-line="144" selection-start-column="31" selection-end-line="144" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#703#714#0" expanded="true" />
+            <element signature="e#704#715#0" expanded="true" />
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
@@ -1077,11 +1091,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+        <state relative-caret-position="392">
+          <caret line="240" column="32" lean-forward="false" selection-start-line="240" selection-start-column="32" selection-end-line="240" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#703#714#0" expanded="true" />
+            <element signature="e#704#715#0" expanded="true" />
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />

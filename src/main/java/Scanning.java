@@ -13,7 +13,7 @@ public class Scanning implements Runnable{
     public static ArrayList<BetCreate> BetsGG = new ArrayList<BetCreate>();
     public static ArrayList<BetCreate> BetsBetFair = new ArrayList<BetCreate>();
     public static ArrayList<BetCreate> BetsBetSpawn = new ArrayList<BetCreate>();
-    public static ArrayList<BetCreate> BetsBetWay = new ArrayList<BetCreate>();
+    public static ArrayList<BetCreate> BetsPlayNow = new ArrayList<BetCreate>();
 
 
 
@@ -26,7 +26,7 @@ public class Scanning implements Runnable{
 
         if (key.equals("test")) {
             ScanPlayNow("https://www.playnow.com/sports/esports");
-
+            System.out.println("Chto dela");
         }
 
         if (key.equals("start")) {
@@ -233,12 +233,12 @@ public class Scanning implements Runnable{
                     coef2 = "0";
                 }
                 System.out.println(" " + coef1 + " " + coef2 + "\t" + name1 + " " + name2 );
-                BetsBetWay.add(new BetCreate(
+                BetsPlayNow.add(new BetCreate(
                         name1,
                         name2,
                         Double.parseDouble(coef1),
                         Double.parseDouble(coef2),
-                        "BetWay",
+                        "PlayNow",
                         sport,
                         page));
                 i+=2;
