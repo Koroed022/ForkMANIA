@@ -25,4 +25,4 @@ hs_err_pid*
 .idea/
 target/
 *.iml
-Token.class
+src/main/java/BotHandler/Token.class
