@@ -1,5 +1,6 @@
 
 import org.jsoup.Jsoup;
+import org.jsoup.UncheckedIOException;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import java.util.ArrayList;
@@ -322,7 +323,7 @@ public class Scanning implements Runnable{
                         page));
                 i++;
             }
-        }catch (Exception e) {
+        }catch (UncheckedIOException e) {
             System.out.println(e.getMessage());
         }
 
