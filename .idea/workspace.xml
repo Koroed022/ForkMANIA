@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="199280c4-e341-49e1-866d-645864d3a24f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/databases/main.db" afterPath="$PROJECT_DIR$/databases/main.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FormClass.form" afterPath="$PROJECT_DIR$/src/main/java/FormClass.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FormClass.java" afterPath="$PROJECT_DIR$/src/main/java/FormClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Scanning.java" afterPath="$PROJECT_DIR$/src/main/java/Scanning.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" afterPath="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FormClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FormClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -64,6 +61,16 @@
                 <marker date="1511429556696" expanded="true" signature="4272:4316" ph="INSERT INTO materials... " />
                 <marker date="1511429556696" expanded="true" signature="4388:4473" ph="INSERT INTO inventory... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaxLeftRight.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="67" column="58" lean-forward="false" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/Commands.java" />
         <option value="$PROJECT_DIR$/src/main/java/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
         <option value="$PROJECT_DIR$/src/main/java/JsonOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/CountMoney.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/DataBaseHandler.java" />
@@ -158,6 +164,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Scanning.java" />
         <option value="$PROJECT_DIR$/src/main/java/FormClass.form" />
         <option value="$PROJECT_DIR$/src/main/java/FormClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
       </list>
     </option>
   </component>
@@ -412,7 +419,7 @@
       <updated>1510589374755</updated>
       <workItem from="1511265220812" duration="44110000" />
       <workItem from="1511368639899" duration="4475000" />
-      <workItem from="1511426113173" duration="6084000" />
+      <workItem from="1511426113173" duration="7435000" />
     </task>
     <task id="LOCAL-00001" summary="Работает v0.1">
       <created>1510634553768</created>
@@ -505,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511429596342</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Forker v1.2 (6 сайтов) + курс доллара">
+      <created>1511434990961</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1511434990961</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54669000" />
+    <option name="totallyTimeSpent" value="56020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -563,7 +577,8 @@
     <MESSAGE value="Forker v1.1 with scan PlayNow" />
     <MESSAGE value="Forker v1.1 with scan PlayNow.v.1.0" />
     <MESSAGE value="Forker v1.1 with 6 sites" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.1 with 6 sites" />
+    <MESSAGE value="Forker v1.2 (6 сайтов) + курс доллара" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.2 (6 сайтов) + курс доллара" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -634,23 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/DataBaseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="102" column="79" lean-forward="false" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="79" />
-          <folding>
-            <marker date="1511429556696" expanded="true" signature="789:827" ph="SELECT chatI... Users" />
-            <marker date="1511429556696" expanded="true" signature="1574:1674" ph="UPDATE wareh... " />
-            <marker date="1511429556696" expanded="true" signature="2173:2208" ph="DELETE FROM " />
-            <marker date="1511429556696" expanded="true" signature="2673:2722" ph="INSERT INTO warehouses... " />
-            <marker date="1511429556696" expanded="true" signature="3159:3216" ph="INSERT INTO Users... " />
-            <marker date="1511429556696" expanded="true" signature="3733:3775" ph="INSERT INTO Heroes... " />
-            <marker date="1511429556696" expanded="true" signature="4272:4316" ph="INSERT INTO materials... " />
-            <marker date="1511429556696" expanded="true" signature="4388:4473" ph="INSERT INTO inventory... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/telegrambots-3.4-jar-with-dependencies.jar!/org/telegram/telegrambots/api/methods/updates/GetUpdates.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
@@ -684,6 +682,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="71" column="47" lean-forward="false" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/DataBaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="102" column="79" lean-forward="false" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="79" />
+          <folding>
+            <marker date="1511429556696" expanded="true" signature="789:827" ph="SELECT chatI... Users" />
+            <marker date="1511429556696" expanded="true" signature="1574:1674" ph="UPDATE wareh... " />
+            <marker date="1511429556696" expanded="true" signature="2173:2208" ph="DELETE FROM " />
+            <marker date="1511429556696" expanded="true" signature="2673:2722" ph="INSERT INTO warehouses... " />
+            <marker date="1511429556696" expanded="true" signature="3159:3216" ph="INSERT INTO Users... " />
+            <marker date="1511429556696" expanded="true" signature="3733:3775" ph="INSERT INTO Heroes... " />
+            <marker date="1511429556696" expanded="true" signature="4272:4316" ph="INSERT INTO materials... " />
+            <marker date="1511429556696" expanded="true" signature="4388:4473" ph="INSERT INTO inventory... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="67" column="58" lean-forward="false" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
           <folding />
         </state>
       </provider>

@@ -65,7 +65,7 @@ public class MaxLeftRight {
                             bet1.get(i).getPage(), bet2.get(j).getPage(),
                             bet1.get(i).getTeam1(), bet2.get(j).getTeam2(),
                             bet1.get(i).getKoef1(), bet2.get(j).getKoef2(),
-                            stavkaonSecond, stavkaonFirst ,//////////////////ВНИМАНИЕ !!!!! ИЗМЕНИЛ
+                            stavkaonFirst ,stavkaonSecond,
                             percent);
                 }
         }
