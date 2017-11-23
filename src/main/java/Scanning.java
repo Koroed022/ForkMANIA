@@ -65,7 +65,7 @@ public class Scanning implements Runnable{
                     BetsGG.clear();
                     BetsSNG.clear();
                     ////////sport
-  //                  Thread.sleep(300000);
+                    Thread.sleep(300000);
                     System.out.println("Спорт");
                     ScanBetFair("https://www.betfair.com/sport/tennis");
                     ScanBetFair("https://www.betfair.com/sport/volleyball");
@@ -234,7 +234,7 @@ public class Scanning implements Runnable{
                     coef1 = "0";
                     coef2 = "0";
                 }
-                System.out.println(" " + coef1 + " " + coef2 + "\t" + name1 + " " + name2 );
+                //System.out.println(" " + coef1 + " " + coef2 + "\t" + name1 + " " + name2 );
                 BetsPlayNow.add(new BetCreate(
                         name1,
                         name2,

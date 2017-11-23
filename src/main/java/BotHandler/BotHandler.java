@@ -7,6 +7,8 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class BotHandler extends TelegramLongPollingBot{
     
@@ -22,7 +24,7 @@ public class BotHandler extends TelegramLongPollingBot{
 
     private void handleUpdate(Update update){
         Message message = update.getMessage();
-
+        Date date = new Date();
         if (message != null && message.hasText()) {
             String text = message.getText();
             String chatID = message.getChatId().toString();
@@ -32,10 +34,10 @@ public class BotHandler extends TelegramLongPollingBot{
             switch (text){
 
                 case Commands.startCommand :{
-                    if (database.getState(chatID) != null) break;
+
                     database.addUser(chatID, message.getFrom().getFirstName(),message.getFrom().getLastName());
                     sendMessageRequest.setChatId(chatID);
-                    sendMessageRequest.setText("Добавлен ..");
+                    sendMessageRequest.setText("Вы добавлены \n" + date.toString());
                     try {
                         sendMessage(sendMessageRequest);
                     } catch (TelegramApiException e) {

@@ -46,8 +46,10 @@ public class MaxLeftRight {
                 }
                 priz1 = win1 - (stavkaonFirst + stavkaonSecond);
                 priz2 = win2 - (stavkaonFirst + stavkaonSecond);
+                double percent = priz1 * 100 / win1;
+                //System.out.println(priz1 * 100 / win1);
                 //System.out.println("Выводись");
-                if (proverka && priz1 > 0 && priz2 > 0) {
+                if (proverka && percent > 1) {
                     fileout1.printf(date.toString() + "\n"  +
                                     bet1.get(i).getPage() + "\n" + bet2.get(j).getPage() + "\n" +
                                     bet1.get(i).getTeam1() + "\t" + bet2.get(j).getTeam2() + "\n" +
@@ -64,7 +66,7 @@ public class MaxLeftRight {
                             bet1.get(i).getTeam1(), bet2.get(j).getTeam2(),
                             bet1.get(i).getKoef1(), bet2.get(j).getKoef2(),
                             stavkaonSecond, stavkaonFirst ,//////////////////ВНИМАНИЕ !!!!! ИЗМЕНИЛ
-                            priz1, priz2);
+                            percent);
                 }
         }
         }catch(Exception e){

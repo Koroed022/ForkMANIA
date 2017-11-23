@@ -7,7 +7,7 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 import org.telegram.telegrambots.logging.BotLogger;
 
 public class JsonOut {
-    public static void setJson(String site1, String site2, String page1, String page2, String name1, String name2, Double coef1, Double coef2, double stavka1, double stavka2, double priz1, double priz2){
+    public static void setJson(String site1, String site2, String page1, String page2, String name1, String name2, Double coef1, Double coef2, double stavka1, double stavka2, double percent){
         JSONObject Json = new JSONObject();
         Json.put("site1",site1);
         Json.put("site2",site2);
@@ -19,8 +19,8 @@ public class JsonOut {
         Json.put("coef2",coef2);
         Json.put("stavka1",stavka1);
         Json.put("stavka2",stavka2);
-        Json.put("priz1",priz1);
-        Json.put("priz2",priz2);
+        Json.put("percent",percent);
+
         System.out.println("MessBot Sending...");
         TeleBot.getInstance().
                 getBotHandler().
@@ -31,8 +31,7 @@ public class JsonOut {
                 + "Коэф 2 :"  + Json.get("coef2") + "\n"
                 + "Ставка 1 :" + Json.get("stavka1") + "\n"
                 + "Ставка 2 :" + Json.get("stavka2")+ "\n"
-                + "Приз 1 :" + Json.get("priz1")+ "\n"
-                + "Приз 2 :" + Json.get("priz2"));
+                + "Процент выигрыша примерно:" + Json.get("percent"));
        // bot.sendToAll(Json.toString());
     }
 }

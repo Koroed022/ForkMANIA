@@ -224,7 +224,8 @@ public class CountMoney {
                             }
                             priz1 = win1 - (stavkaonFirst + stavkaonSecond);
                             priz2 = win2 - (stavkaonFirst + stavkaonSecond);
-                            if (proverka && priz1 > 0 && priz2 > 0) {
+                            double percent = priz1 * 100 / win1;
+                            if (proverka && percent > 1) {
                                 fileout1.printf(date.toString() + "\n"  + sport + what + "\n" + name1 + "\t" + name2 + "\n" + max + "\t" + maxAnother + "\n" + stavkaonFirst + "\t\t" + stavkaonSecond + "\n");
                                 fileProv.printf(sport + what + " " + name1 + " " + name2 + "\n");
                                 JsonOut.setJson(bet1.get(i).getSite(), bet2.get(j).getSite(),
@@ -232,7 +233,7 @@ public class CountMoney {
                                         name1, name2,
                                         max, maxAnother,
                                         stavkaonFirst, stavkaonSecond,
-                                        priz1,priz2);
+                                        percent);
                                 System.out.println(sport + "\n" + what + "\n" + name1 + "\t" + name2 + "\n" + max + "\t" + maxAnother + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n" + priz1 + "\t" + priz2);
                             }
 
@@ -303,8 +304,7 @@ public class CountMoney {
                                 stavkaonSecond = win1 - stavkaonFirst;
                                 win2 = maxright * stavkaonSecond;
                             }
-                            while(win1 >= stavkaonFirst + stavkaonSecond && stavkaonFirst + stavkaonSecond <= win2 && Math.abs(win2 - win1) > 2)
-                            {
+                            while (win1 >= stavkaonFirst + stavkaonSecond && stavkaonFirst + stavkaonSecond <= win2 && Math.abs(win2 - win1) > 2) {
                                 stavkaonSecond = stavkaonSecond - 0.5;
                                 win2 = maxright * stavkaonSecond;
                             }
@@ -317,9 +317,10 @@ public class CountMoney {
                             }
                             priz1 = win1 - (stavkaonFirst + stavkaonSecond);
                             priz2 = win2 - (stavkaonFirst + stavkaonSecond);
+                            double percent = priz1 * 100 / win1;
                             //System.out.println("Выводись");
-                            if (proverka && priz1 > 0 && priz2 > 0) {
-                                fileout1.print(date.toString() + "\n"  + "http://game-tournaments.com" + e.eq(i).attr("href") + "\tставишь тут на две команды" + "\n" + maxleft + "\t" + maxright + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n");
+                            if (proverka && percent > 1) {
+                                fileout1.print(date.toString() + "\n" + "http://game-tournaments.com" + e.eq(i).attr("href") + "\tставишь тут на две команды" + "\n" + maxleft + "\t" + maxright + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n");
                                 fileProv.print("http://game-tournaments.com" + e.eq(i).attr("href") + "\n");
                                 System.out.println(maxleft + "\t" + maxright + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n" + priz1 + "\t" + priz2);
                                 JsonOut.setJson("http://game-tournaments.com" + e.eq(i).attr("href"),
@@ -332,8 +333,7 @@ public class CountMoney {
                                         maxright,
                                         stavkaonFirst,
                                         stavkaonSecond,
-                                        priz1,
-                                        priz2);
+                                        percent);
                             }
                         }
                     }

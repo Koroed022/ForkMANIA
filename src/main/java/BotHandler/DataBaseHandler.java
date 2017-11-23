@@ -115,20 +115,6 @@ public class DataBaseHandler {
         }
     }
 
-    public String getState(String chatID){
-        String state = null;
-        String sql = "SELECT State FROM Users WHERE ChatID = ?";
-        try {
-            Connection conn = this.connect();
-            PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, chatID);
-            state = pstmt.executeQuery().getString("State");
-
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-        return state;
-    }
 
     public void addHero(String heroID, String heroName){
         String sql = "INSERT INTO Heroes (id, name) VALUES (?,?)";
