@@ -14,14 +14,17 @@ public class TeleBot {
 
     private TeleBot() {
         ApiContextInitializer.init();
-
-        TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
-        botHandler = new BotHandler();
         try {
-            botHandler.clearWebhook();
-            telegramBotsApi.registerBot(new BotHandler());
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
+            TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
+            botHandler = new BotHandler();
+            try {
+                botHandler.clearWebhook();
+                telegramBotsApi.registerBot(new BotHandler());
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+        }catch (Exception razriv){
+            System.out.println(razriv.getMessage());
         }
     }
 

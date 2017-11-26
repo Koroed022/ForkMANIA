@@ -27,7 +27,9 @@ public class Scanning implements Runnable{
 
 
         if (key.equals("test")) {
-
+            String originalString = "25.683049278625";
+            originalString = originalString.split("(?<=\\G.{6})")[0];
+            System.out.println(originalString);
         }
 
         if (key.equals("start")) {
@@ -67,6 +69,7 @@ public class Scanning implements Runnable{
                     BetsWEPLAY.clear();
                     BetsGG.clear();
                     BetsSNG.clear();
+                    BetsPlayNow.clear();
                     ////////sport
                     Thread.sleep(300000);
                     System.out.println("Спорт");
@@ -91,6 +94,7 @@ public class Scanning implements Runnable{
                     BetsWEPLAY.clear();
                     BetsGG.clear();
                     BetsSNG.clear();
+                    BetsPlayNow.clear();
                     Thread.sleep(300000);
                 } catch (Exception epta) {
                     Scanning.Scan(key,m,coef);
@@ -476,7 +480,7 @@ public class Scanning implements Runnable{
                         Double.parseDouble(coef2),
                         "GGBET",
                         sport,
-                        "GGBET"));
+                        "https://gg11.bet/ru/betting#!"));
                 i++;
             }
         }catch (Exception e) {
@@ -649,7 +653,7 @@ public class Scanning implements Runnable{
                         Double.parseDouble(coef2.split("\",\"result_nm")[0]),
                         "WePlay",
                         sport,
-                        "WePlay"));
+                        "https://weplay.tv/bets/ls"));
                 i++;
             }
         }catch (NoClassDefFoundError er){
