@@ -1,8 +1,9 @@
 
 import org.jsoup.Jsoup;
-import org.jsoup.UncheckedIOException;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 
@@ -34,6 +35,7 @@ public class Scanning implements Runnable{
             while (true) {
                 try {
                     //////esport
+
                     System.out.println("КиберСпорт");
                     ScanBetSpawn("https://www.betspawn.com/ru/odds/76-dota-2");
                     ScanBetSpawn("https://www.betspawn.com/ru/odds/78-hearthstone");
@@ -50,7 +52,7 @@ public class Scanning implements Runnable{
                     ScanBetFair("https://www.betfair.com/sport/e-sports");
                     Scan1X("https://1xbet26.com/line/eSports/");
                     ScanWePlay("https://weplay.tv/bets/ls");
-                    ScanSNG("https://sng.cybbet.com/");
+                    ScanSNG("https://rucybbet.com/");
                     ScanGGBet("http://game-tournaments.com/csgo/matches");
                     ScanGGBet("http://game-tournaments.com/dota-2/matches");
                     CountMoney.Inverse2(BetsBetFair, BetsBetSpawn, "BetFair + BetSpawn");
@@ -58,7 +60,7 @@ public class Scanning implements Runnable{
                     CountMoney.ForAllBets(BetsWEPLAY, BetsBetSpawn, BetsGG, Bets1X);
                     CountMoney.ForAllBets(BetsBetFair, BetsBetSpawn, BetsGG, Bets1X);
                     CountMoney.ForAllBets(BetsBetFair, BetsPlayNow, BetsGG, Bets1X);
-
+                    System.out.println("all done1");
                     BetsBetSpawn.clear();
                     BetsBetFair.clear();
                     Bets1X.clear();
@@ -82,6 +84,7 @@ public class Scanning implements Runnable{
 
                     CountMoney.Inverse2(BetsBetFair, Bets1X, "Sport_Fair+1X");
 
+                    System.out.println("all done2");
                     BetsBetSpawn.clear();
                     BetsBetFair.clear();
                     Bets1X.clear();
@@ -323,7 +326,7 @@ public class Scanning implements Runnable{
                         page));
                 i++;
             }
-        }catch (UncheckedIOException e) {
+        }catch (IOException e) {
             System.out.println(e.getMessage());
         }
 
@@ -334,9 +337,11 @@ public class Scanning implements Runnable{
             String sport = "game";
             Document doc = Jsoup
                     .connect(site)
+                    //.userAgent("Mozilla/17.0")
+                    .followRedirects(true)
                     // .cookies(login.cookies()) //use this with any page you parse. it will log you in
                     .get();
-            //System.out.println(doc.toString());
+            System.out.println(doc.toString());
             String manyInf[]  = doc.toString().split("\" data-name-game=\"");
             String manycoefs[];
             //System.out.println(manyInf);
@@ -399,11 +404,11 @@ public class Scanning implements Runnable{
                         Double.parseDouble(coef2),
                         "SNG",
                         sport,
-                        "SNG"));
+                        "https://sng.cybbet.com/"));
                 i++;
             }
         }catch (Exception e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
 
         }
 
