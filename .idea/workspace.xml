@@ -25,8 +25,8 @@
       <file leaf-file-name="Scanning.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="399" column="42" lean-forward="true" selection-start-line="399" selection-start-column="42" selection-end-line="399" selection-end-column="42" />
+            <state relative-caret-position="229">
+              <caret line="342" column="27" lean-forward="true" selection-start-line="342" selection-start-column="27" selection-end-line="342" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
@@ -413,7 +413,7 @@
       <workItem from="1511426113173" duration="11863000" />
       <workItem from="1511496824330" duration="3850000" />
       <workItem from="1511613048146" duration="1437000" />
-      <workItem from="1511625828336" duration="7529000" />
+      <workItem from="1511625828336" duration="7600000" />
     </task>
     <task id="LOCAL-00001" summary="Работает v0.1">
       <created>1510634553768</created>
@@ -520,11 +520,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511438656531</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Forker v1.2 (7 сайтов) + USD-&gt;RUB">
+      <created>1511672742634</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1511672742634</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73264000" />
+    <option name="totallyTimeSpent" value="73335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -579,7 +586,8 @@
     <MESSAGE value="Forker v1.1 with scan PlayNow.v.1.0" />
     <MESSAGE value="Forker v1.1 with 6 sites" />
     <MESSAGE value="Forker v1.2 (6 сайтов) + курс доллара" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.2 (6 сайтов) + курс доллара" />
+    <MESSAGE value="Forker v1.2 (7 сайтов) + USD-&gt;RUB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.2 (7 сайтов) + USD-&gt;RUB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -889,8 +897,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="399" column="42" lean-forward="true" selection-start-line="399" selection-start-column="42" selection-end-line="399" selection-end-column="42" />
+        <state relative-caret-position="229">
+          <caret line="342" column="27" lean-forward="true" selection-start-line="342" selection-start-column="27" selection-end-line="342" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />

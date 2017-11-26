@@ -341,7 +341,7 @@ public class Scanning implements Runnable{
                     .followRedirects(true)
                     // .cookies(login.cookies()) //use this with any page you parse. it will log you in
                     .get();
-            System.out.println(doc.toString());
+            //System.out.println(doc.toString());
             String manyInf[]  = doc.toString().split("\" data-name-game=\"");
             String manycoefs[];
             //System.out.println(manyInf);
