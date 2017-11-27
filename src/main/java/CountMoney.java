@@ -323,12 +323,12 @@ public class CountMoney {
                                 fileout1.print(date.toString() + "\n" + "http://game-tournaments.com" + e.eq(i).attr("href") + "\tставишь тут на две команды" + "\n" + maxleft + "\t" + maxright + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n");
                                 fileProv.print("http://game-tournaments.com" + e.eq(i).attr("href") + "\n");
                                 System.out.println(maxleft + "\t" + maxright + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n" + priz1 + "\t" + priz2);
-                                JsonOut.setJson("http://game-tournaments.com" + e.eq(i).attr("href"),
-                                        "",
-                                        "",
-                                        "",
-                                        "",
-                                        "",
+                                JsonOut.setJson("Смотреть на сайте",
+                                        "-",
+                                        "http://game-tournaments.com" + e.eq(i).attr("href"),
+                                        "-",
+                                        "-",
+                                        "-",
                                         maxleft,
                                         maxright,
                                         stavkaonFirst,

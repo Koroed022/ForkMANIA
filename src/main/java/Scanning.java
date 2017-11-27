@@ -1,5 +1,6 @@
 
 import org.jsoup.Jsoup;
+import org.jsoup.UncheckedIOException;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
@@ -330,7 +331,7 @@ public class Scanning implements Runnable{
                         page));
                 i++;
             }
-        }catch (IOException e) {
+        }catch (UncheckedIOException e) {
             System.out.println(e.getMessage());
         }
 
@@ -413,7 +414,6 @@ public class Scanning implements Runnable{
             }
         }catch (Exception e) {
             System.out.println(e.getMessage());
-
         }
 
     }
