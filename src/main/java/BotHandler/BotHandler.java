@@ -67,6 +67,14 @@ public class BotHandler extends TelegramLongPollingBot{
                 } catch (TelegramApiException e) {
                     System.out.println(e.getMessage());
                 }
+            }else {
+                sendMessageRequest.setChatId(heap.getChatId());
+                sendMessageRequest.setText("Уважаемый(ая) " + heap.getName() + " ваш пробный период истек, сейчас вам бы могла прийти еще одна Букмекерская вилка, оплатите скромную плату и получите доступ к МЕСЯЦУ продуктивного пользования Ботом-Вилочником, в ином случае, можете просто заблокировать бота.\n"+"чтобы продолжить пользование Ботом-Вилочником, вам необходимо оплатить 100 российских рублей на Яндекс Кошелек: 410015642443592, а также прикрепить комментарий, где вы укажите свое имя в Телеграмм, для идентификации.");
+                try {
+                    sendMessage(sendMessageRequest);
+                } catch (TelegramApiException e) {
+                    System.out.println(e.getMessage());
+                }
             }
         }
     }

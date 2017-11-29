@@ -320,7 +320,7 @@ public class CountMoney {
                             }
                             priz1 = win1 - (stavkaonFirst + stavkaonSecond);
                             priz2 = win2 - (stavkaonFirst + stavkaonSecond);
-                            double percent = (priz1 + priz2) * 100 / (stavkaonFirst);
+                            double percent = (priz1) * 100 / (stavkaonFirst + stavkaonSecond);
                             //System.out.println("Выводись");
                             if (proverka && percent > 1) {
                                 fileout1.print(date.toString() + "\n" + "http://game-tournaments.com" + e.eq(i).attr("href") + "\tставишь тут на две команды" + "\n" + maxleft + "\t" + maxright + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n");
