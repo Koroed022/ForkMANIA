@@ -46,7 +46,7 @@ public class MaxLeftRight {
                 }
                 priz1 = win1 - (stavkaonFirst + stavkaonSecond);
                 priz2 = win2 - (stavkaonFirst + stavkaonSecond);
-                double percent = priz1 * 100 / win1;
+                double percent = (priz1 + priz2) * 100 / (stavkaonFirst);
                 //System.out.println(priz1 * 100 / win1);
                 //System.out.println("Выводись");
                 if (proverka && percent > 1) {

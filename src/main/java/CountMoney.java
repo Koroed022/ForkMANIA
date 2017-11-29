@@ -250,6 +250,8 @@ public class CountMoney {
         int i = 0, count = 1, j = 0;
         Date date = new Date();
         double maxleft, maxright;
+        String name1;
+        String name2;
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     new FileInputStream("C:\\Users\\Vlad\\Desktop\\proverka.txt"), "UTF-8"));
@@ -274,8 +276,9 @@ public class CountMoney {
                     j++;
                     i++;
                 }
-                if (e.eq(i).toString().split("result", -1).length - 1 < 1)
-
+                if (e.eq(i).toString().split("result", -1).length - 1 < 1) {
+                     name1 = e.eq(i).toString().split("title=\"")[1].split(" против")[0];
+                     name2 = e.eq(i).toString().split("против ")[1].split("\" class=\"mlink\">")[0];
                     if (count > 1) {
 
                         ArrayList<Float> listleft = new ArrayList<Float>();
@@ -317,18 +320,18 @@ public class CountMoney {
                             }
                             priz1 = win1 - (stavkaonFirst + stavkaonSecond);
                             priz2 = win2 - (stavkaonFirst + stavkaonSecond);
-                            double percent = priz1 * 100 / win1;
+                            double percent = (priz1 + priz2) * 100 / (stavkaonFirst);
                             //System.out.println("Выводись");
                             if (proverka && percent > 1) {
                                 fileout1.print(date.toString() + "\n" + "http://game-tournaments.com" + e.eq(i).attr("href") + "\tставишь тут на две команды" + "\n" + maxleft + "\t" + maxright + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n");
                                 fileProv.print("http://game-tournaments.com" + e.eq(i).attr("href") + "\n");
                                 System.out.println(maxleft + "\t" + maxright + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n" + priz1 + "\t" + priz2);
-                                JsonOut.setJson("Смотреть на сайте",
+                                JsonOut.setJson("Смотреть на САЙТЕ",
                                         "-",
                                         "http://game-tournaments.com" + e.eq(i).attr("href"),
                                         "-",
-                                        "-",
-                                        "-",
+                                        name1,
+                                        name2,
                                         maxleft,
                                         maxright,
                                         stavkaonFirst,
@@ -337,6 +340,7 @@ public class CountMoney {
                             }
                         }
                     }
+                }
                 i++;
                 j = 0;
                 count = 1;

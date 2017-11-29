@@ -5,8 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/databases/main.db" afterPath="$PROJECT_DIR$/databases/main.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CountMoney.java" afterPath="$PROJECT_DIR$/src/main/java/CountMoney.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/JsonOut.java" afterPath="$PROJECT_DIR$/src/main/java/JsonOut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Scanning.java" afterPath="$PROJECT_DIR$/src/main/java/Scanning.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" afterPath="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="Scanning.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="70" column="35" lean-forward="true" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
+            <state relative-caret-position="-1154">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#296#307#0" expanded="true" />
@@ -50,12 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CountMoney.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CountMoney.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CountMoney.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="331" column="48" lean-forward="true" selection-start-line="331" selection-start-column="48" selection-end-line="331" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="-97">
+              <caret line="248" column="75" lean-forward="false" selection-start-line="248" selection-start-column="75" selection-end-line="248" selection-end-column="75" />
+              <folding>
+                <element signature="method#ForAllBets#0;class#CountMoney#0" expanded="false" />
+                <element signature="method#RandomCountCoefs#0;class#CountMoney#0" expanded="false" />
+                <element signature="method#Inverse2#0;class#CountMoney#0" expanded="false" />
+                <element signature="method#Coefcount#0;class#CountMoney#0" expanded="false" />
+                <element signature="e#16860#16867#0" expanded="true" />
+                <element signature="e#16937#16944#0" expanded="true" />
+                <element signature="e#17016#17023#0" expanded="true" />
+                <element signature="e#17096#17103#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,9 +71,14 @@
       <file leaf-file-name="MaxLeftRight.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="58" column="73" lean-forward="false" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
-              <folding />
+            <state relative-caret-position="68">
+              <caret line="48" column="71" lean-forward="false" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+              <folding>
+                <element signature="method#MaxLeft3#0;class#MaxLeftRight#0" expanded="false" />
+                <element signature="method#MaxRight3#0;class#MaxLeftRight#0" expanded="false" />
+                <element signature="method#MaxLeft4#0;class#MaxLeftRight#0" expanded="false" />
+                <element signature="method#MaxRight4#0;class#MaxLeftRight#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonOut.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JsonOut.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="27" column="63" lean-forward="true" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+            <state relative-caret-position="124">
+              <caret line="36" column="76" lean-forward="true" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -93,8 +106,8 @@
       <file leaf-file-name="FormClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FormClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="89" column="32" lean-forward="false" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
+            <state relative-caret-position="175">
+              <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -203,15 +216,15 @@
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/DataBaseHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/FormClass.form" />
-        <option value="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
         <option value="$PROJECT_DIR$/src/main/java/FormClass.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/BetCreate.java" />
         <option value="$PROJECT_DIR$/src/main/java/TeleBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/Scanning.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CountMoney.java" />
         <option value="$PROJECT_DIR$/src/main/java/JsonOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CountMoney.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
       </list>
     </option>
   </component>
@@ -301,6 +314,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="BotHandler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bets2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bets2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="FormClass" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="Bets2" type="b2602c69:ProjectViewProjectNode" />
@@ -463,7 +484,7 @@
       <workItem from="1511613048146" duration="1437000" />
       <workItem from="1511625828336" duration="8472000" />
       <workItem from="1511692329325" duration="7933000" />
-      <workItem from="1511761654514" duration="1871000" />
+      <workItem from="1511761654514" duration="13010000" />
     </task>
     <task id="LOCAL-00001" summary="Работает v0.1">
       <created>1510634553768</created>
@@ -591,11 +612,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511696073904</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Forker v1.3 (7 сайтов) + USD-&gt;RUB + Удобный визуал">
+      <created>1511763560252</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1511763560252</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84011000" />
+    <option name="totallyTimeSpent" value="95150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -610,7 +638,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25356576" sideWeight="0.50292826" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26038575" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30110934" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30110934" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -622,7 +650,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42472267" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42472267" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -653,7 +681,8 @@
     <MESSAGE value="Forker v1.2 (6 сайтов) + курс доллара" />
     <MESSAGE value="Forker v1.2 (7 сайтов) + USD-&gt;RUB" />
     <MESSAGE value="Forker v1.3 (7 сайтов) + USD-&gt;RUB + Удобный визуал" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.3 (7 сайтов) + USD-&gt;RUB + Удобный визуал" />
+    <MESSAGE value="Forker v1.4 (7 сайтов + bugs fixed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.4 (7 сайтов + bugs fixed)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -688,8 +717,20 @@
           <properties />
           <option name="timeStamp" value="155" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CountMoney.java</url>
+          <line>249</line>
+          <properties />
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CountMoney.java</url>
+          <line>266</line>
+          <properties />
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="156" />
+      <option name="time" value="158" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -724,7 +765,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="58" column="73" lean-forward="true" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
-          <folding />
+          <folding>
+            <element signature="method#MaxLeft3#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxRight3#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxLeft4#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxRight4#0;class#MaxLeftRight#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -898,7 +944,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="80" lean-forward="false" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
-          <folding />
+          <folding>
+            <element signature="method#MaxLeft3#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxRight3#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxLeft4#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxRight4#0;class#MaxLeftRight#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -988,7 +1039,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="80" lean-forward="false" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
-          <folding />
+          <folding>
+            <element signature="method#MaxLeft3#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxRight3#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxLeft4#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxRight4#0;class#MaxLeftRight#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,14 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FormClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="89" column="32" lean-forward="false" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TeleBot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1110,26 +1158,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CountMoney.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="331" column="48" lean-forward="true" selection-start-line="331" selection-start-column="48" selection-end-line="331" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="58" column="73" lean-forward="false" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="36" column="76" lean-forward="true" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -1142,10 +1182,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FormClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="70" column="35" lean-forward="true" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
+        <state relative-caret-position="-1154">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#296#307#0" expanded="true" />
@@ -1168,11 +1216,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="27" column="63" lean-forward="true" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="48" column="71" lean-forward="false" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+          <folding>
+            <element signature="method#MaxLeft3#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxRight3#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxLeft4#0;class#MaxLeftRight#0" expanded="false" />
+            <element signature="method#MaxRight4#0;class#MaxLeftRight#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CountMoney.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="248" column="75" lean-forward="false" selection-start-line="248" selection-start-column="75" selection-end-line="248" selection-end-column="75" />
+          <folding>
+            <element signature="method#ForAllBets#0;class#CountMoney#0" expanded="false" />
+            <element signature="method#RandomCountCoefs#0;class#CountMoney#0" expanded="false" />
+            <element signature="method#Inverse2#0;class#CountMoney#0" expanded="false" />
+            <element signature="method#Coefcount#0;class#CountMoney#0" expanded="false" />
+            <element signature="e#16860#16867#0" expanded="true" />
+            <element signature="e#16937#16944#0" expanded="true" />
+            <element signature="e#17016#17023#0" expanded="true" />
+            <element signature="e#17096#17103#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
