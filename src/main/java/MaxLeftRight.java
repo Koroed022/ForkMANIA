@@ -59,7 +59,7 @@ public class MaxLeftRight {
                     System.out.println("EEEEE BOYYYYYYYYYYYYYYYYYYYYYY");
                     fileProv.printf(
                             bet1.get(i).getSite() + " " + bet2.get(j).getSite() + " " +
-                                    bet1.get(i).getTeam1() + " " + bet2.get(j).getTeam2() + "\n");
+                            bet1.get(i).getTeam1() + " " + bet2.get(j).getTeam2() + "\n");
 
                     JsonOut.setJson(bet1.get(i).getSite(), bet2.get(j).getSite(),
                             bet1.get(i).getPage(), bet2.get(j).getPage(),

@@ -259,7 +259,7 @@ public class CountMoney {
             String strLine, strline2;
             Boolean proverka = true;
 
-            FileWriter writer1 = new FileWriter("C:\\Users\\Vlad\\Desktop\\EsportBets.txt", true);
+            FileWriter writer1 = new FileWriter("C:\\Users\\Vlad\\Desktop\\EsportBets.txt",  true);
             FileWriter writer2 = new FileWriter("C:\\Users\\Vlad\\Desktop\\proverka.txt", true);
             PrintWriter fileout1 = new PrintWriter(writer1, true);
             PrintWriter fileProv = new PrintWriter(writer2, true);

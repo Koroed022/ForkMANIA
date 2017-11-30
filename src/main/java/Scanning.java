@@ -17,6 +17,7 @@ public class Scanning implements Runnable{
     public static ArrayList<BetCreate> BetsBetFair = new ArrayList<BetCreate>();
     public static ArrayList<BetCreate> BetsBetSpawn = new ArrayList<BetCreate>();
     public static ArrayList<BetCreate> BetsPlayNow = new ArrayList<BetCreate>();
+    public static ArrayList<BetCreate> BetsPari = new ArrayList<BetCreate>();
 
 
 
@@ -28,9 +29,13 @@ public class Scanning implements Runnable{
 
 
         if (key.equals("test")) {
-            String originalString = "25.683049278625";
-            originalString = originalString.split("(?<=\\G.{6})")[0];
-            System.out.println(originalString);
+            ScanSNG("https://rucybbet.com/");
+            ScanPari("https://www.parimatch.com/live.html");
+            ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-dreamhack");
+            ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-skinhub");
+            ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-x-bet-invitational");
+            ScanPari("https://www.parimatch.com/sport/kibersport/dota-2-dreamleague");
+            ScanPari("https://www.parimatch.com/sport/kibersport/dota-2-prodota-cup");
         }
 
         if (key.equals("start")) {
@@ -38,8 +43,19 @@ public class Scanning implements Runnable{
             while (true) {
                 try {
                     //////esport
-
                     System.out.println("КиберСпорт");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-dreamhack");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-skinhub");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-x-bet-invitational");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/dota-2-dreamleague");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/dota-2-prodota-cup");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/dota-2-joindota");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-bitva-blogerov");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-stream-me");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-esl-mlw");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-legend-series");
+                    ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-csgonet-cup");
+
                     ScanBetSpawn("https://www.betspawn.com/ru/odds/76-dota-2");
                     ScanBetSpawn("https://www.betspawn.com/ru/odds/78-hearthstone");
                     ScanBetSpawn("https://www.betspawn.com/ru/odds/75-counter-strike-go");
@@ -63,6 +79,7 @@ public class Scanning implements Runnable{
                     CountMoney.ForAllBets(BetsWEPLAY, BetsBetSpawn, BetsGG, Bets1X);
                     CountMoney.ForAllBets(BetsBetFair, BetsBetSpawn, BetsGG, Bets1X);
                     CountMoney.ForAllBets(BetsBetFair, BetsPlayNow, BetsGG, Bets1X);
+                    CountMoney.ForAllBets(BetsBetFair, BetsPari, BetsGG, Bets1X);
                     System.out.println("all done1");
                     BetsBetSpawn.clear();
                     BetsBetFair.clear();
@@ -74,6 +91,7 @@ public class Scanning implements Runnable{
                     ////////sport
                     Thread.sleep(300000);
                     System.out.println("Спорт");
+
                     ScanBetFair("https://www.betfair.com/sport/tennis");
                     ScanBetFair("https://www.betfair.com/sport/volleyball");
                     ScanBetFair("https://www.betfair.com/sport/darts");
@@ -142,7 +160,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
 
                 name2 = names.split(" — ")[1];
                 name2 = name2.replaceAll(" Game ", "map")
@@ -158,7 +181,13 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
+
 
 
                 manycoefs = manyInf[i].split("data-coef=\"");
@@ -217,7 +246,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
 
                 name2 = names[2].split(" <span id=\"market-row")[0];
                 name2 = name2.replaceAll(" Game ", "map")
@@ -233,7 +267,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
 
 
                 manycoefs = manyInf[i].split("\" href=\"\"> ");
@@ -253,6 +292,110 @@ public class Scanning implements Runnable{
                         sport,
                         page));
                 i+=2;
+            }
+        }catch (Exception e) {
+            e.getMessage();
+        }
+    }
+    public static synchronized void ScanPari(String site) throws Exception {
+        System.out.println("Pari");
+        try {
+            Document doc = Jsoup
+                    .connect(site)
+                    // .cookies(login.cookies()) //use this with any page you parse. it will log you in
+                    .get();
+            //System.out.println(doc.toString());
+            String manycoefs[];
+            String document = doc.toString();
+
+            String alts[] = doc.toString().split("alt=\"");
+            String splitKey;
+            if(alts.length > 6) {
+                splitKey ="title=\"...\">";
+            }
+            else splitKey = "class=\"l\">";
+            //System.out.println(splitKey);
+            String manyInf[];
+            manyInf = doc.toString().split(splitKey);
+            if (manyInf.length < 2) {
+                splitKey ="title=\"..\">";
+                manyInf = doc.toString().split(splitKey);
+            }
+            String names;
+
+            //System.out.println(manyInf);
+            String sport = "ESPORT";
+            int i = 1,betCount;
+            betCount = manyInf.length;
+            String coef1,coef2,name1,name2,page;
+            while(i < betCount) {
+                page  = site;
+                names = manyInf[i].split("</td>\n" + "           <td>")[0];
+                name1 = names.split("<br>")[0];
+                name1 = name1.replaceAll(" Game ", "map")
+                        .replaceAll("aAa","Team aAa")
+                        .replaceAll("Ninjas in Pyjamas","NiP")
+                        .replaceAll("MoF","MidOrFeed")
+                        .replaceAll("XctN","Execration")
+                        .replaceAll("HR","HellRaisers")
+                        .replaceAll("Gambit Gaming","Gambit")
+                        .replaceAll("fnatic","Fnatic")
+                        .replaceAll("LGD.FY","LGD.Forever Young")
+                        .replaceAll("Na’Vi","Natus Vincere")
+                        .replaceAll("Empire","Team Empire")
+                        .replaceAll("DC","Digital Chaos")
+                        .replaceAll("BP","Blue Pikachu")
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll("Team ","")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
+
+                name2 = names.split("<br>")[1].split("</a>")[0];
+                name2 = name2.replaceAll(" Game ", "map")
+                        .replaceAll("aAa","Team aAa")
+                        .replaceAll("Ninjas in Pyjamas","NiP")
+                        .replaceAll("MoF","MidOrFeed")
+                        .replaceAll("XctN","Execration")
+                        .replaceAll("HR","HellRaisers")
+                        .replaceAll("Gambit Gaming","Gambit")
+                        .replaceAll("fnatic","Fnatic")
+                        .replaceAll("LGD.FY","LGD.Forever Young")
+                        .replaceAll("Na’Vi","Natus Vincere")
+                        .replaceAll("Empire","Team Empire")
+                        .replaceAll("DC","Digital Chaos")
+                        .replaceAll("BP","Blue Pikachu")
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll("Team ","")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
+
+
+                manycoefs = manyInf[i].split("</a></u></td>");
+                String forcoef1[] = manycoefs[manycoefs.length - 2].split("\">");
+                String forcoef2[] = manycoefs[manycoefs.length - 1].split("\">");
+                coef1 = forcoef1[forcoef1.length - 1].split("</a></u> </td>")[0];
+                coef2 = forcoef2[1].split("</a></u> </td>")[0];
+
+                if (coef1.equals(" ")) {
+                    coef1 = "0";
+                    coef2 = "0";
+                }
+                //System.out.println(" " + coef1 + " " + coef2 + "\t" + name1 + " " + name2 );
+                BetsPari.add(new BetCreate(
+                        name1,
+                        name2,
+                        Double.parseDouble(coef1),
+                        Double.parseDouble(coef2),
+                        "Pari",
+                        sport,
+                        page));
+                i++;
             }
         }catch (Exception e) {
             e.getMessage();
@@ -294,7 +437,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
                 name2 = names.split(" vs ")[1];
                 name2 = name2.replaceAll(" Game ", "map")
                         .replaceAll("aAa","Team aAa")
@@ -309,7 +457,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
                 manycoefs = manyInf[i].split("class=\"odd\">");
                 try {
                     if (manycoefs.length > 1) {
@@ -354,7 +507,7 @@ public class Scanning implements Runnable{
             int i = 1,betCount;
             betCount = doc.toString().split("data-name-game=\"", -1).length - 1;
             String coef1,coef2,time,name1,name2,names;
-            while(i < betCount){
+            while(i < betCount - 1){
                 names = manyInf[i].split("\"data-time-event")[0];
                 name1 = names.split(" vs")[0];
                 name1 = name1.replaceAll("Game","map")
@@ -370,7 +523,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
                 name2 = names.split("vs ")[1].split("\" data-time-event=\"")[0];
                 name2 = name2.replaceAll("Game","map")
                 .replaceAll("MoF","MidOrFeed")
@@ -386,7 +544,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
 
                 manycoefs = manyInf[i].split(" - Ставка на\" href");
                 coef1 = manycoefs[1].split("<i class=\"fa fa-arrow-down\" style=\"color:red;display:none\"></i>\n" +
@@ -413,7 +576,7 @@ public class Scanning implements Runnable{
                 i++;
             }
         }catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println(e.toString() + "Error bliat");
         }
 
     }
@@ -449,7 +612,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
                 name2 = names.split("против ")[1]
                         .replaceAll("aAa","Team aAa")
                         .replaceAll("Ninjas in Pyjamas","NiP")
@@ -463,7 +631,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
                 coef1 = manyInf[i].split("bet-percentage bet1\">")[1].split("</span> <span class=\"vs\"> ")[0];
                 coef1 = coef1.replaceAll("\\(","").replaceAll("\\)","");
                 coef2 = manyInf[i].split("bet-percentage bet2\">")[1].split("</span> </span> <span>")[0];
@@ -545,7 +718,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
                 name2 = names.split(" v ")[1]
                         .replaceAll("aAa","Team aAa")
                         .replaceAll("Ninjas in Pyjamas","NiP")
@@ -559,7 +737,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
 
                 if(site.split("https://www.betfair.com/sport/").equals("tennis")){
                     name1 = name1.substring(0,1) + name1.split(" ")[1];
@@ -627,7 +810,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
                 name2 = manyInf[i].split("player2\":\"")[1].split("\",\"pic1")[0]
                         .replaceAll("aAa","Team aAa")
                         .replaceAll("Ninjas in Pyjamas","NiP")
@@ -641,7 +829,12 @@ public class Scanning implements Runnable{
                         .replaceAll("Empire","Team Empire")
                         .replaceAll("DC","Digital Chaos")
                         .replaceAll("BP","Blue Pikachu")
-                        .replaceAll("Vega","Vega Squadron");
+                        .replaceAll("Vega","Vega Squadron")
+                        .replaceAll(" Esports","")
+                        .replaceAll(" Gaming","")
+                        .replaceAll(" Game","")
+                        .replaceAll(" Team","")
+                        .replaceAll("Team ","");
                 coef1 = manyInf[i].split("results\":\\{\"1\":\\{\"coefficient\":\"")[1].split("\"},\"3\":\\{\"coefficient\":\"")[0];
                 coef2 = manyInf[i].split("\"},\"3\":\\{\"coefficient\":\"")[1];
                 time = manyInf[i].split("day\":\"")[1].split("\",\"tm_stamp")[0].replaceAll("\",\"time\":\""," ");
