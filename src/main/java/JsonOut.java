@@ -7,7 +7,7 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 import org.telegram.telegrambots.logging.BotLogger;
 
 public class JsonOut {
-    public static void setJson(String site1, String site2, String page1, String page2, String name1, String name2, double coef1, double coef2, double stavka1, double stavka2, double percent){
+    public static void setJson(String site1, String site2, String page1, String page2, String name1, String name2, double coef1, double coef2, double stavka1, double stavka2, double percent) throws InterruptedException {
         String coef1ST, coef2ST, stavka1ST, stavka2ST, percentST;
         JSONObject Json = new JSONObject();
 
@@ -40,6 +40,7 @@ public class JsonOut {
                 + "Ставка 1 :" + Json.get("stavka1") + "\n"
                 + "Ставка 2 :" + Json.get("stavka2")+ "\n"
                 + "Процент выигрыша примерно:" + Json.get("percent"));
+        Thread.sleep(20000);
        // bot.sendToAll(Json.toString());
     }
 }

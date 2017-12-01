@@ -91,7 +91,7 @@ public class BotHandler extends TelegramLongPollingBot{
                 try {
                     sendMessage(sendMessageRequest);
                 } catch (TelegramApiException e) {
-                    System.out.println(e.getMessage());
+                    System.out.println(e.toString());
                 }
             }else {
                 sendMessageRequest.setChatId(heap.getChatId());

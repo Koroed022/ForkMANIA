@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="199280c4-e341-49e1-866d-645864d3a24f" name="Default" comment="">
+    <list default="true" id="199280c4-e341-49e1-866d-645864d3a24f" name="Default" comment="Forker v1.6 (8 сайтов + help commands)">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/databases/main.db" afterPath="$PROJECT_DIR$/databases/main.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" afterPath="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BotHandler/Commands.java" afterPath="$PROJECT_DIR$/src/main/java/BotHandler/Commands.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/JsonOut.java" afterPath="$PROJECT_DIR$/src/main/java/JsonOut.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Scanning.java" afterPath="$PROJECT_DIR$/src/main/java/Scanning.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,24 +18,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Bets2$Solution.coverage" NAME="Solution Coverage Results" MODIFIED="1511291261214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Bets2$Solution.coverage" NAME="Solution Coverage Results" MODIFIED="1512154336047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Scanning.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="692" column="27" lean-forward="true" selection-start-line="692" selection-start-column="27" selection-end-line="692" selection-end-column="27" />
+            <state relative-caret-position="137">
+              <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#935#957#0" expanded="true" />
                 <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
-                <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
+                <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
                 <element signature="method#run#0;class#Scanning#0" expanded="false" />
@@ -46,8 +47,48 @@
       <file leaf-file-name="MaxLeftRight.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="75" column="1" lean-forward="false" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+            <state relative-caret-position="154">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeleBot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TeleBot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonOut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BotHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="97" column="94" lean-forward="true" selection-start-line="97" selection-start-column="94" selection-end-line="97" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -65,9 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;meta _ngcontent-c35=&quot;&quot; itemprop=&quot;name&quot; content=&quot;</find>
-      <find>class=&quot;col-sm-1 hidden-xs-down date-container hide-esportname&quot;&gt;</find>
-      <find>=&quot;&quot; itemprop=&quot;name&quot; content=&quot;</find>
       <find>Billy Harris</find>
       <find>Harris</find>
       <find>eventInfoCenter</find>
@@ -95,6 +133,9 @@
       <find>itemprop=&quot;url&quot;</find>
       <find>&quot;&gt; &lt;i _ngcontent-c</find>
       <find>.split(&quot;\&quot;&gt; &lt;i _ngcontent-c&quot;)</find>
+      <find>odds</find>
+      <find>&lt;a _ngcontent-c</find>
+      <find>href=&quot;/ru/odds/</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,12 +168,12 @@
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/BetCreate.java" />
         <option value="$PROJECT_DIR$/src/main/java/TeleBot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JsonOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/CountMoney.java" />
         <option value="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Scanning.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/Commands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JsonOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Scanning.java" />
       </list>
     </option>
   </component>
@@ -394,7 +435,7 @@
       <workItem from="1511625828336" duration="8472000" />
       <workItem from="1511692329325" duration="7933000" />
       <workItem from="1511761654514" duration="38912000" />
-      <workItem from="1512055759837" duration="25153000" />
+      <workItem from="1512055759837" duration="32439000" />
     </task>
     <task id="LOCAL-00001" summary="Работает v0.1">
       <created>1510634553768</created>
@@ -557,11 +598,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512144743866</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Forker v1.6 (8 сайтов + help commands)">
+      <created>1512149151944</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1512149151944</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146205000" />
+    <option name="totallyTimeSpent" value="153491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="-8" width="1296" height="1000" extended-state="6" />
@@ -578,6 +626,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26038575" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21420519" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890624" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -596,7 +645,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -623,14 +671,15 @@
     <MESSAGE value="Forker v1.4 (7 сайтов + yet fixed)" />
     <MESSAGE value="Forker v1.5 (8 сайтов + Cybbet,PariMatch)" />
     <MESSAGE value="Forker v1.6 (8 сайтов + MassRework 1x1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.6 (8 сайтов + MassRework 1x1)" />
+    <MESSAGE value="Forker v1.6 (8 сайтов + help commands)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.6 (8 сайтов + help commands)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Scanning.java</url>
-          <line>152</line>
+          <line>151</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
@@ -641,13 +690,19 @@
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java</url>
-          <line>51</line>
+          <url>file://$PROJECT_DIR$/src/main/java/JsonOut.java</url>
+          <line>31</line>
           <properties />
-          <option name="timeStamp" value="178" />
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scanning.java</url>
+          <line>443</line>
+          <properties />
+          <option name="timeStamp" value="182" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="181" />
+      <option name="time" value="183" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -699,9 +754,9 @@
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />
@@ -780,9 +835,9 @@
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />
@@ -837,9 +892,9 @@
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />
@@ -924,9 +979,9 @@
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />
@@ -1075,30 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="75" column="1" lean-forward="false" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FormClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1118,22 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TeleBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CountMoney.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1145,19 +1160,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="97" column="94" lean-forward="true" selection-start-line="97" selection-start-column="94" selection-end-line="97" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TeleBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="692" column="27" lean-forward="true" selection-start-line="692" selection-start-column="27" selection-end-line="692" selection-end-column="27" />
+        <state relative-caret-position="137">
+          <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#935#957#0" expanded="true" />
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />

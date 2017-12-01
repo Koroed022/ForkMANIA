@@ -73,7 +73,6 @@ public class Scanning implements Runnable{
                     ScanGameTour("http://game-tournaments.com/lol/bets", maxI);
                     ScanGameTour("http://game-tournaments.com/overwatch/bets", maxI);
 
-
                     ScanPlayNow("https://www.playnow.com/sports/esports");
                     ScanBetFair("https://www.betfair.com/sport/e-sports");
                     Scan1X("https://1xbet26.com/line/eSports/");
@@ -140,7 +139,7 @@ public class Scanning implements Runnable{
                     BetsPari.clear();
                     Thread.sleep(300000);
                 } catch (Exception epta) {
-                    Scanning.Scan(key,m,coef);
+                    System.out.println(epta.toString());
                 }
             }
         }
@@ -168,7 +167,7 @@ public class Scanning implements Runnable{
                 while (manyInf[i].split(" — ", -1).length - 1 < 1) {
                     i++;
                 }
-                page ="https://1xxxc.xyz/line/" + manyInf[i].split("<a href=\"line/")[1].split("\" class=\"c-events")[0];
+                page ="https://1xbet26.com/line/" + manyInf[i].split("<a href=\"line/")[1].split("\" class=\"c-events")[0];
                 names = manyInf[i].split("span class=\"n\" title=\"")[1].split("   \"> ")[0];
                 name1 = names.split(" —")[0];
                 name1 = name1.replaceAll(" Game ", "map")
@@ -443,15 +442,23 @@ public class Scanning implements Runnable{
             betCount = manyInf.length;
             String name1,name2,names,page;
             while(i < betCount) {
-                pages = manyInf[i].split("\"> <i _ngcontent-c");
-                page ="https://www.betspawn.com/ru/odds/" + pages[0].split("itemprop=\"url\" href=\"/ru/odds/")[1];
+                pages = manyInf[i].split("\"> <. _ngcontent-c");
+                try {
+                    page = "https://www.betspawn.com/ru/odds/" + pages[1].split("itemprop=\"url\" href=\"/ru/odds/")[1];
+                    if (page.length() > 100)
+                        page = page.split("\"> \n" + "                       <!----> ")[0];
+                }catch (ArrayIndexOutOfBoundsException bounds){
+                    System.out.println(bounds.toString());
+                    page = pages[1].split("href=\"/ru/odds/")[1];
+                    page = "https://www.betspawn.com/ru/odds/" + page.split("\">")[0];
+                }
                 manypodInf = manyInf[i].split("\"> \n" + "                     <div _ngcontent");
                 names = manypodInf[0].split("itemprop=\"name\" content=\"")[1];
 //manypodInf[0] = manypodInf[0].split("")
                 name1 = names.split(" vs ")[0];
                 name1 = name1.replaceAll(" Game ", "map")
                         .replaceAll("aAa","Team aAa")
-                        .replaceAll("Ninjas in Pyjamas","NiP")
+                        .replaceAll("Ninjas in Pyjstartamas","NiP")
                         .replaceAll("MoF","MidOrFeed")
                         .replaceAll("XctN","Execration")
                         .replaceAll("HR","HellRaisers")
@@ -509,8 +516,8 @@ public class Scanning implements Runnable{
                         page));
                 i++;
             }
-        }catch (UncheckedIOException e) {
-            System.out.println(e.getMessage());
+        }catch (Exception e) {
+            System.out.println(e.toString());
         }
 
     }
