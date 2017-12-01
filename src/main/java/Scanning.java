@@ -18,6 +18,7 @@ public class Scanning implements Runnable{
     public static ArrayList<BetCreate> BetsBetSpawn = new ArrayList<BetCreate>();
     public static ArrayList<BetCreate> BetsPlayNow = new ArrayList<BetCreate>();
     public static ArrayList<BetCreate> BetsPari = new ArrayList<BetCreate>();
+    public static ArrayList<ArrayList<BetCreate>> Bets = new ArrayList<ArrayList<BetCreate>>();
 
 
 
@@ -36,6 +37,12 @@ public class Scanning implements Runnable{
             ScanPari("https://www.parimatch.com/sport/kibersport/counter-strike-x-bet-invitational");
             ScanPari("https://www.parimatch.com/sport/kibersport/dota-2-dreamleague");
             ScanPari("https://www.parimatch.com/sport/kibersport/dota-2-prodota-cup");
+
+            Bets.add(BetsSNG);
+            Bets.add(BetsPari);
+            for (int i = 0; i < Bets.size(); i++)
+                for (int j = 0; i < Bets.size(); j++)
+                    CountMoney.Inverse2(Bets.get(i),Bets.get(j),"ESPORT");
         }
 
         if (key.equals("start")) {
@@ -74,12 +81,26 @@ public class Scanning implements Runnable{
                     ScanSNG("https://rucybbet.com/");
                     ScanGGBet("http://game-tournaments.com/csgo/matches");
                     ScanGGBet("http://game-tournaments.com/dota-2/matches");
-                    CountMoney.Inverse2(BetsBetFair, BetsBetSpawn, "BetFair + BetSpawn");
-                    CountMoney.ForAllBets(BetsWEPLAY, BetsSNG, BetsGG, Bets1X);
-                    CountMoney.ForAllBets(BetsWEPLAY, BetsBetSpawn, BetsGG, Bets1X);
-                    CountMoney.ForAllBets(BetsBetFair, BetsBetSpawn, BetsGG, Bets1X);
-                    CountMoney.ForAllBets(BetsBetFair, BetsPlayNow, BetsGG, Bets1X);
-                    CountMoney.ForAllBets(BetsBetFair, BetsPari, BetsGG, Bets1X);
+
+                    Bets.add(BetsSNG);
+                    Bets.add(BetsPari);
+                    Bets.add(BetsWEPLAY);
+                    Bets.add(BetsBetFair);
+                    Bets.add(BetsBetSpawn);
+                    Bets.add(BetsGG);
+                    Bets.add(Bets1X);
+                    Bets.add(BetsPlayNow);
+                    for (int i = 0; i < Bets.size(); i++)
+                        for (int j = 1; j < Bets.size(); j++)
+                            CountMoney.Inverse2(Bets.get(i),Bets.get(j),"ESPORT");
+
+                    //CountMoney.Inverse2(BetsBetFair, BetsBetSpawn, "BetFair + BetSpawn");
+                    //CountMoney.ForAllBets(BetsWEPLAY, BetsSNG, BetsGG, Bets1X);
+                    //CountMoney.ForAllBets(BetsWEPLAY, BetsBetSpawn, BetsGG, Bets1X);
+                    //CountMoney.ForAllBets(BetsBetFair, BetsBetSpawn, BetsGG, Bets1X);
+                    //CountMoney.ForAllBets(BetsBetFair, BetsPlayNow, BetsGG, Bets1X);
+                    //CountMoney.ForAllBets(BetsBetFair, BetsPari, BetsGG, Bets1X);
+                    //CountMoney.ForAllBets(BetsBetSpawn, BetsPari, BetsGG, Bets1X);
                     System.out.println("all done1");
                     BetsBetSpawn.clear();
                     BetsBetFair.clear();
@@ -88,6 +109,8 @@ public class Scanning implements Runnable{
                     BetsGG.clear();
                     BetsSNG.clear();
                     BetsPlayNow.clear();
+                    BetsPari.clear();
+                    Bets.clear();
                     ////////sport
                     Thread.sleep(300000);
                     System.out.println("Спорт");
@@ -104,7 +127,7 @@ public class Scanning implements Runnable{
                     Scan1X("https://1xbet26.com/us/line/Snooker/");
                     Scan1X("https://1xbet26.com/us/line/Sumo/");
 
-                    CountMoney.Inverse2(BetsBetFair, Bets1X, "Sport_Fair+1X");
+                    CountMoney.Inverse2(BetsBetFair, Bets1X, "Sport");
 
                     System.out.println("all done2");
                     BetsBetSpawn.clear();
@@ -114,6 +137,7 @@ public class Scanning implements Runnable{
                     BetsGG.clear();
                     BetsSNG.clear();
                     BetsPlayNow.clear();
+                    BetsPari.clear();
                     Thread.sleep(300000);
                 } catch (Exception epta) {
                     Scanning.Scan(key,m,coef);
@@ -410,7 +434,7 @@ public class Scanning implements Runnable{
                     .get();
             //System.out.println(doc.toString());
             String manyInf[]  = doc.toString().split("</span> \n" + "                     <meta _ngcontent-c");
-            String manycoefs[], manypodInf[];
+            String manycoefs[], manypodInf[], pages[];
 
             //System.out.println(manyInf);
             String sport = "game";
@@ -419,7 +443,8 @@ public class Scanning implements Runnable{
             betCount = manyInf.length;
             String name1,name2,names,page;
             while(i < betCount) {
-                page ="https://www.betspawn.com/ru/odds/" + manyInf[i].split("itemprop=\"url\" href=\"/ru/odds/")[1].split("\"> \n" + "                       <!----> \n" + "                       <!----> ")[0];
+                pages = manyInf[i].split("\"> <i _ngcontent-c");
+                page ="https://www.betspawn.com/ru/odds/" + pages[0].split("itemprop=\"url\" href=\"/ru/odds/")[1];
                 manypodInf = manyInf[i].split("\"> \n" + "                     <div _ngcontent");
                 names = manypodInf[0].split("itemprop=\"name\" content=\"")[1];
 //manypodInf[0] = manypodInf[0].split("")

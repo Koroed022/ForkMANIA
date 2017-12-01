@@ -5,161 +5,6 @@ import java.util.Collections;
 import java.util.Date;
 
 public class CountMoney {
-    public synchronized static void ForAllBets(ArrayList<BetCreate> bet1,ArrayList<BetCreate> bet2,ArrayList<BetCreate> bet3,ArrayList<BetCreate> bet4) throws IOException {
-        int i = 0, j = 0, k = 0, l = 0;
-        for (i = 0; i < bet1.size(); i++) {
-            if (bet2.size() != 0) {
-                for (j = 0; j < bet2.size(); j++) {
-                    if (bet1.get(i).getTeam1().equals(bet2.get(j).getTeam1()) &&
-                            bet1.get(i).getTeam2().equals(bet2.get(j).getTeam2())) {
-                        if (bet3.size() != 0) {
-                            for (k = 0; k < bet3.size(); k++) {
-                                if (bet1.get(i).getTeam1().equals(bet2.get(j).getTeam1()) &&
-                                        bet1.get(i).getTeam2().equals(bet2.get(j).getTeam2()) &&
-                                        bet1.get(i).getTeam1().equals(bet3.get(k).getTeam1()) &&
-                                        bet1.get(i).getTeam2().equals(bet3.get(k).getTeam2())) {
-                                    for (l = 0; l < bet4.size(); l++) {
-                                        if (bet1.get(i).getTeam1().equals(bet2.get(j).getTeam1()) &&
-                                                bet1.get(i).getTeam2().equals(bet2.get(j).getTeam2()) &&
-                                                bet1.get(i).getTeam1().equals(bet3.get(k).getTeam1()) &&
-                                                bet1.get(i).getTeam2().equals(bet3.get(k).getTeam2()) &&
-                                                bet1.get(i).getTeam1().equals(bet4.get(l).getTeam1()) &&
-                                                bet1.get(i).getTeam2().equals(bet4.get(l).getTeam2())) {
-                                            CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "1234", i, j, k, l);
-                                        } else {
-                                            CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "123", i, j, k, l);
-                                        }
-                                    }
-                                } else {
-                                    for (l = 0; l < bet4.size(); l++) {
-                                        if (bet1.get(i).getTeam1().equals(bet2.get(j).getTeam1()) &&
-                                                bet1.get(i).getTeam2().equals(bet2.get(j).getTeam2()) &&
-                                                bet1.get(i).getTeam1().equals(bet4.get(l).getTeam1()) &&
-                                                bet1.get(i).getTeam2().equals(bet4.get(l).getTeam2())) {
-                                            CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "124", i, j, k, l);
-                                        } else {
-                                            CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "12", i, j, k, l);
-                                        }
-                                    }
-                                }
-                            }
-                        } else {
-                            for (l = 0; l < bet4.size(); l++) {
-                                if (bet1.get(i).getTeam1().equals(bet2.get(j).getTeam1()) &&
-                                        bet1.get(i).getTeam2().equals(bet2.get(j).getTeam2()) &&
-                                        bet1.get(i).getTeam1().equals(bet4.get(l).getTeam1()) &&
-                                        bet1.get(i).getTeam2().equals(bet4.get(l).getTeam2())) {
-                                    CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "124", i, j, k, l);
-                                } else {
-                                    CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "12", i, j, k, l);
-                                }
-                            }
-                        }
-                    } else {
-                        for (k = 0; k < bet3.size(); k++) {
-                            if (bet1.get(i).getTeam1().equals(bet3.get(k).getTeam1()) &&
-                                    bet1.get(i).getTeam2().equals(bet3.get(k).getTeam2())) {
-                                for (l = 0; l < bet4.size(); l++) {
-                                    if (bet1.get(i).getTeam1().equals(bet3.get(k).getTeam1()) &&
-                                            bet1.get(i).getTeam2().equals(bet3.get(k).getTeam2()) &&
-                                            bet1.get(i).getTeam1().equals(bet4.get(l).getTeam1()) &&
-                                            bet1.get(i).getTeam2().equals(bet4.get(l).getTeam2())) {
-                                        CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "134", i, j, k, l);
-                                    } else {
-                                        CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "13", i, j, k, l);
-                                    }
-                                }
-                            } else {
-                                for (l = 0; l < bet4.size(); l++) {
-                                    if (bet1.get(i).getTeam1().equals(bet4.get(l).getTeam1()) &&
-                                            bet1.get(i).getTeam2().equals(bet4.get(l).getTeam2())) {
-                                        CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "14", i, j, k, l);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            } else {
-                if (bet3.size() != 0) {
-                    for (k = 0; k < bet3.size(); k++) {
-                        if (bet1.get(i).getTeam1().equals(bet3.get(k).getTeam1()) &&
-                                bet1.get(i).getTeam2().equals(bet3.get(k).getTeam2())) {
-                            for (l = 0; l < bet4.size(); l++) {
-                                if (bet1.get(i).getTeam1().equals(bet3.get(k).getTeam1()) &&
-                                        bet1.get(i).getTeam2().equals(bet3.get(k).getTeam2()) &&
-                                        bet1.get(i).getTeam1().equals(bet4.get(l).getTeam1()) &&
-                                        bet1.get(i).getTeam2().equals(bet4.get(l).getTeam2())) {
-                                    CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "134", i, j, k, l);
-                                } else {
-                                    CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "13", i, j, k, l);
-                                }
-                            }
-                        } else {
-                            for (l = 0; l < bet4.size(); l++) {
-                                if (bet1.get(i).getTeam1().equals(bet4.get(l).getTeam1()) &&
-                                        bet1.get(i).getTeam2().equals(bet4.get(l).getTeam2())) {
-                                    CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "14", i, j, k, l);
-                                }
-                            }
-                        }
-                    }
-                } else {
-                    for (l = 0; l < bet4.size(); l++) {
-                        if (bet1.get(i).getTeam1().equals(bet4.get(l).getTeam1()) &&
-                                bet1.get(i).getTeam2().equals(bet4.get(l).getTeam2())) {
-                            CountMoney.RandomCountCoefs(bet1, bet2, bet3, bet4, "14", i, j, k, l);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    public synchronized static void RandomCountCoefs(ArrayList<BetCreate> bet1,ArrayList<BetCreate> bet2,ArrayList<BetCreate> bet3,ArrayList<BetCreate> bet4, String condition, int i, int j, int k, int l) throws IOException {
-
-        if(condition.equals("12")){
-            MaxLeftRight.Max2(bet1,bet2,"12", i, j);
-        }
-        if(condition.equals("13")){
-            MaxLeftRight.Max2(bet1,bet3,"13", i, k);
-        }
-        if(condition.equals("14")){
-            MaxLeftRight.Max2(bet1,bet4,"14", i, l);
-        }
-        if(condition.equals("123")) {
-            MaxLeftRight.Max2(
-                    MaxLeftRight.MaxLeft3(bet1,bet2,bet3,"123", i, j, k).getList(),
-                    MaxLeftRight.MaxRight3(bet1,bet2,bet3,"123", i, j, k).getList(),
-                    "123",
-                    MaxLeftRight.MaxLeft3(bet1,bet2,bet3,"123", i, j, k).getInt(),
-                    MaxLeftRight.MaxRight3(bet1,bet2,bet3,"123", i, j, k).getInt());
-
-        }
-        if(condition.equals("124")) {
-            MaxLeftRight.Max2(
-                    MaxLeftRight.MaxLeft3(bet1,bet2,bet4,"124", i, j, l).getList(),
-                    MaxLeftRight.MaxRight3(bet1,bet2,bet4,"124", i, j, l).getList(),
-                    "124",
-                    MaxLeftRight.MaxLeft3(bet1,bet2,bet4,"124", i, j, l).getInt(),
-                    MaxLeftRight.MaxRight3(bet1,bet2,bet4,"124", i, j, l).getInt());
-        }
-        if(condition.equals("134")) {
-            MaxLeftRight.Max2(
-                    MaxLeftRight.MaxLeft3(bet1,bet3,bet4,"134", i, k, l).getList(),
-                    MaxLeftRight.MaxRight3(bet1,bet3,bet4,"134", i, k, l).getList(),
-                    "134",
-                    MaxLeftRight.MaxLeft3(bet1,bet3,bet4,"134", i, k, l).getInt(),
-                    MaxLeftRight.MaxRight3(bet1,bet3,bet4,"134", i, k, l).getInt());
-        }
-        if(condition.equals("2134")) {
-            MaxLeftRight.Max2(
-                    MaxLeftRight.MaxLeft4(bet1,bet2,bet3,bet4,"1234", i, j, k, l).getList(),
-                    MaxLeftRight.MaxRight4(bet1,bet2,bet3,bet4,"1234", i, j, k, l).getList(),
-                    "1234",
-                    MaxLeftRight.MaxLeft4(bet1,bet2,bet3,bet4,"1234", i, j, k, l).getInt(),
-                    MaxLeftRight.MaxRight4(bet1,bet2,bet3,bet4,"1234", i, j, k, l).getInt());
-        }
-    }
     public synchronized static void Inverse2(ArrayList<BetCreate> bet1, ArrayList<BetCreate> bet2, String what) throws IOException {
         Date date = new Date();
         try {
@@ -179,67 +24,9 @@ public class CountMoney {
                     name2;
             for (int i = 0; i < Bets1.size(); i++) {
                 for (int j = 0; j < Bets2.size(); j++) {
-                    if ((Bets1.get(i).getTeam1().equals(Bets2.get(j).getTeam1()) && Bets1.get(i).getTeam2().equals(Bets2.get(j).getTeam2())) ||
-                            (Bets1.get(i).getTeam1().equals(Bets2.get(j).getTeam2()) && Bets1.get(i).getTeam2().equals(Bets2.get(j).getTeam1())))  {
-                        //System.out.println(BetsW.get(i).getTeam1() + " " + BetsS.get(j).getTeam1() + "\n" + BetsW.get(i).getTeam2() + " " + BetsS.get(j).getTeam2());
-                        /////дальше дичь, утром праввить, ищем максиммум из них, дальше считаем(возможно надо прикрутить ссылку)
-                        double maxAnother;
-                        boolean key;
-                        double max = Math.max(Bets1.get(i).getKoef2(), Bets2.get(j).getKoef2()),priz1,priz2;
-                        if (max == Bets2.get(j).getKoef2()) {
-                            name1 = Bets2.get(j).getTeam2();
-                            maxAnother = Bets1.get(i).getKoef1();
-                            key = true;
-                        } else {
-                            name1 = Bets1.get(i).getTeam2();
-                            maxAnother = Bets2.get(j).getKoef1();
-                            key = false;
-                        }
-                        //System.out.println(max + " " + maxAnother);
-                        if (Math.pow(max, -1) + Math.pow(maxAnother, -1) < 1) {
-                            if (key)
-                                name2 = Bets1.get(i).getTeam1();
-                            else
-                                name2 = Bets2.get(j).getTeam1();
-                            String sport = bet1.get(i).getSport();
-                            int stavkaonFirst = 0;
-                            double win1 = 0, stavkaonSecond = 0, win2 = 0;
-                            for (int k = 1; max * k < FormClass.maxI; k++) {
-                                stavkaonFirst = k;
-                                win1 = max * stavkaonFirst;
-                                stavkaonSecond = win1 - stavkaonFirst;
-
-                            }
-                            while(win1 >= stavkaonFirst + stavkaonSecond && stavkaonFirst + stavkaonSecond <= win2 && Math.abs(win2 - win1) > 2)
-                            {
-                                stavkaonSecond = stavkaonSecond - 0.5;
-                                win2 = maxAnother * stavkaonSecond;
-                            }
-                            strline2 = sport + what + " " + name1 + " " + name2;
-                            while ((strLine = br.readLine()) != null) {
-                                if (strLine.equals(strline2)) {
-                                    proverka = false;
-                                    break;
-                                }
-                            }
-                            priz1 = win1 - (stavkaonFirst + stavkaonSecond);
-                            priz2 = win2 - (stavkaonFirst + stavkaonSecond);
-                            double percent = priz1 * 100 / win1;
-                            if (proverka && percent > 1) {
-                                fileout1.printf(date.toString() + "\n"  + sport + what + "\n" + name1 + "\t" + name2 + "\n" + max + "\t" + maxAnother + "\n" + stavkaonFirst + "\t\t" + stavkaonSecond + "\n");
-                                fileProv.printf(sport + what + " " + name1 + " " + name2 + "\n");
-                                JsonOut.setJson(bet1.get(i).getSite(), bet2.get(j).getSite(),
-                                        bet1.get(i).getPage(), bet2.get(j).getPage(),
-                                        name1, name2,
-                                        max, maxAnother,
-                                        stavkaonFirst, stavkaonSecond,
-                                        percent);
-                                System.out.println(sport + "\n" + what + "\n" + name1 + "\t" + name2 + "\n" + max + "\t" + maxAnother + "\n" + stavkaonFirst + "\t" + stavkaonSecond + "\n" + priz1 + "\t" + priz2);
-                            }
-
-                        }
+                    if (Bets1.get(i).getTeam1().equals(Bets2.get(j).getTeam1()) && Bets1.get(i).getTeam2().equals(Bets2.get(j).getTeam2())) {
+                        MaxLeftRight.Max2(Bets1, Bets2, "1", i, j);
                     }
-
                 }
             }
         }catch (Exception e){
@@ -360,7 +147,7 @@ public class CountMoney {
             win1 = coef1 * stavkaonFirst;
             stavkaonSecond = win1 - stavkaonFirst;
             win2 = coef2 * stavkaonSecond;
-            while(win1 >= stavkaonFirst + stavkaonSecond && stavkaonFirst + stavkaonSecond <= win2 && Math.abs(win2 - win1) > 2)
+            while(win1 >= stavkaonFirst + stavkaonSecond && stavkaonFirst + stavkaonSecond <= win2 && Math.abs(win2 - win1) > 1)
             {
                 stavkaonSecond = stavkaonSecond - 0.5;
                 win2 = coef2 * stavkaonSecond;
