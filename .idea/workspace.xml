@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="199280c4-e341-49e1-866d-645864d3a24f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/databases/main.db" afterPath="$PROJECT_DIR$/databases/main.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CountMoney.java" afterPath="$PROJECT_DIR$/src/main/java/CountMoney.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" afterPath="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" afterPath="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BotHandler/Commands.java" afterPath="$PROJECT_DIR$/src/main/java/BotHandler/Commands.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Scanning.java" afterPath="$PROJECT_DIR$/src/main/java/Scanning.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,33 +24,20 @@
       <file leaf-file-name="Scanning.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="111" column="37" lean-forward="true" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+            <state relative-caret-position="36">
+              <caret line="692" column="27" lean-forward="true" selection-start-line="692" selection-start-column="27" selection-end-line="692" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#935#957#0" expanded="true" />
                 <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
+                <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
-                <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
                 <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
                 <element signature="method#run#0;class#Scanning#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountMoney.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CountMoney.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-166">
-              <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-              <folding>
-                <element signature="method#Coefcount#0;class#CountMoney#0" expanded="false" />
-                <element signature="method#TwoCoefs#0;class#CountMoney#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -62,29 +48,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1241">
               <caret line="75" column="1" lean-forward="false" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/FormClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="55" column="42" lean-forward="true" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
-              <folding>
-                <element signature="e#1661#2886#0" expanded="true" />
-                <element signature="e#2885#2886#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonOut.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,7 +119,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Heap.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/Heap.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/TeleBot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BotHandler/Commands.java" />
         <option value="$PROJECT_DIR$/src/main/java/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/BotHandler/DataBaseHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/FormClass.form" />
@@ -166,10 +128,11 @@
         <option value="$PROJECT_DIR$/src/main/java/BetCreate.java" />
         <option value="$PROJECT_DIR$/src/main/java/TeleBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/JsonOut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Scanning.java" />
         <option value="$PROJECT_DIR$/src/main/java/CountMoney.java" />
         <option value="$PROJECT_DIR$/src/main/java/MaxLeftRight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Scanning.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BotHandler/Commands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java" />
       </list>
     </option>
   </component>
@@ -431,7 +394,7 @@
       <workItem from="1511625828336" duration="8472000" />
       <workItem from="1511692329325" duration="7933000" />
       <workItem from="1511761654514" duration="38912000" />
-      <workItem from="1512055759837" duration="21284000" />
+      <workItem from="1512055759837" duration="25153000" />
     </task>
     <task id="LOCAL-00001" summary="Работает v0.1">
       <created>1510634553768</created>
@@ -587,11 +550,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512063110429</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Forker v1.6 (8 сайтов + MassRework 1x1)">
+      <created>1512144743866</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1512144743866</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142336000" />
+    <option name="totallyTimeSpent" value="146205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="-8" width="1296" height="1000" extended-state="6" />
@@ -599,14 +569,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32646593" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32581738" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25356576" sideWeight="0.50292826" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26038575" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21420519" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21420519" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -618,7 +588,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42390078" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42390078" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -652,7 +622,8 @@
     <MESSAGE value="Forker v1.4 (7 сайтов + bugs fixed)" />
     <MESSAGE value="Forker v1.4 (7 сайтов + yet fixed)" />
     <MESSAGE value="Forker v1.5 (8 сайтов + Cybbet,PariMatch)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.5 (8 сайтов + Cybbet,PariMatch)" />
+    <MESSAGE value="Forker v1.6 (8 сайтов + MassRework 1x1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forker v1.6 (8 сайтов + MassRework 1x1)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -681,14 +652,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/BetCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -736,9 +699,9 @@
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />
@@ -817,9 +780,9 @@
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />
@@ -874,9 +837,9 @@
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />
@@ -961,9 +924,9 @@
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />
@@ -1104,24 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TeleBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="66" column="50" lean-forward="false" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BetCreate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -1138,22 +1083,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MaxLeftRight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="75" column="1" lean-forward="false" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CountMoney.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="method#Coefcount#0;class#CountMoney#0" expanded="false" />
-            <element signature="method#TwoCoefs#0;class#CountMoney#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,27 +1110,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JsonOut.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/Commands.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BotHandler/BotHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TeleBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CountMoney.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="method#Coefcount#0;class#CountMoney#0" expanded="false" />
+            <element signature="method#TwoCoefs#0;class#CountMoney#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scanning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="111" column="37" lean-forward="true" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+        <state relative-caret-position="36">
+          <caret line="692" column="27" lean-forward="true" selection-start-line="692" selection-start-column="27" selection-end-line="692" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#935#957#0" expanded="true" />
             <element signature="method#Scan1X#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPlayNow#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanPari#0;class#Scanning#0" expanded="false" />
+            <element signature="method#ScanBetSpawn#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanSNG#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGGBet#0;class#Scanning#0" expanded="false" />
-            <element signature="method#ScanBetFair#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanWePlay#0;class#Scanning#0" expanded="false" />
             <element signature="method#ScanGameTour#0;class#Scanning#0" expanded="false" />
             <element signature="method#run#0;class#Scanning#0" expanded="false" />

@@ -703,9 +703,6 @@ public class Scanning implements Runnable{
                     site.split("https://www.betfair.com/sport/")[1].equals("snooker"))
                 bliaHZ = 2;
 
-            if(site.split("https://www.betfair.com/sport/")[1].equals("table-tennis"))
-                System.out.println("nashol");
-
             if (bliaHZ == 1)
                 manyInf = doc.toString().split("<div class=\"ui-market-handicap-values\"> ");
             if (bliaHZ == 2)

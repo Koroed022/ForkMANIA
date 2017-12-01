@@ -37,7 +37,7 @@ public class BotHandler extends TelegramLongPollingBot{
 
                     database.addUser(chatID, message.getFrom().getFirstName(),message.getFrom().getLastName());
                     sendMessageRequest.setChatId(chatID);
-                    sendMessageRequest.setText("Вы добавлены \n" + date.toString());
+                    sendMessageRequest.setText("Вы добавлены \n" + date.toString() + "\nДля доступа к сайтам команда: /help \nДля VPN команда: /vpn");
                     try {
                         sendMessage(sendMessageRequest);
                     } catch (TelegramApiException e) {
@@ -45,8 +45,34 @@ public class BotHandler extends TelegramLongPollingBot{
                     }
                     return;
                 }
-
-
+                case Commands.helpVPN :{
+                    sendMessageRequest.setChatId(chatID);
+                    sendMessageRequest.setText("Скачиваете по ссылке установщик VPN и устанавливаем: \n" +
+                            "https://swupdate.openvpn.org/community/releases/openvpn-install-2.4.4-I601.exe \n" +
+                            "Тут скачиваем сервер VPN Нидерланды(самый левый), а также создаем аккаунт: \n" +
+                            "https://www.tcpvpn.com/vpn-server-netherlands \n" +
+                            "Запускаем приложение OpenVPN GUI и там задаем путь к нашему скаченному серверу Нидерландов\n" +
+                            "Раз в 5 дней вам будет необходимо создавать новый аккаунт на этом сайте и подключаться по новой\n" +
+                            "Таким образом VPN бесплатен и дает доступ ко всем сайтам");
+                    try {
+                        sendMessage(sendMessageRequest);
+                    } catch (TelegramApiException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    return;
+                }
+                case Commands.help :{
+                    sendMessageRequest.setChatId(chatID);
+                    sendMessageRequest.setText("Для доступа к сайтам букмекерских контор вам достаточно скачать расширение для браузера:" +
+                            "FriGate и не забыть его включить \n" +
+                            "Приятных ставок :)");
+                    try {
+                        sendMessage(sendMessageRequest);
+                    } catch (TelegramApiException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    return;
+                }
             }
 
         }
