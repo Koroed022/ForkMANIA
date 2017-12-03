@@ -44,7 +44,7 @@ public class FormClass extends JFrame  {
                 //System.out.println(doc.toString());
                 cursArea.setText("1 USD = " + dollarCurs);
             } catch (Exception erGo) {
-                System.out.println(erGo.getMessage());
+                System.out.println(erGo.toString());
             }
 
 
@@ -65,7 +65,7 @@ public class FormClass extends JFrame  {
                                 Thread scan = new Thread(scanning);
                                 scan.start();
                             } catch (Exception e1) {
-                                System.out.println(e1.getMessage());
+                                System.out.println(e1.toString());
                             }
 
                         }
@@ -77,7 +77,7 @@ public class FormClass extends JFrame  {
             setDefaultCloseOperation(JDialog.EXIT_ON_CLOSE);
 
         }catch (IllegalComponentStateException illegalComponentStateException){
-            System.out.println(illegalComponentStateException.getMessage());}
+            System.out.println(illegalComponentStateException.toString());}
     }
 
 

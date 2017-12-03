@@ -14,15 +14,23 @@ public class MaxLeftRight {
 
             String strLine, strline2;
             Boolean proverka = true;
-
+            double coef2 = 0;
+            String team2 = "", site2, page2;
             FileWriter writer1 = new FileWriter("C:\\Users\\Vlad\\Desktop\\EsportBets.txt", true);
             FileWriter writer2 = new FileWriter("C:\\Users\\Vlad\\Desktop\\proverka.txt", true);
             PrintWriter fileout1 = new PrintWriter(writer1, true);
             PrintWriter fileProv = new PrintWriter(writer2, true);
             //System.out.println("Выводись ссука");
-
-            if (Math.pow(bet1.get(i).getKoef1(), -1) + Math.pow(bet2.get(j).getKoef2(), -1) < 1 &&
-                    bet1.get(i).getKoef1() != bet2.get(j).getKoef2()) {
+            if(condition.equals("1")){
+               coef2 = bet2.get(j).getKoef2();
+               team2 = bet2.get(j).getTeam2();
+            }
+            if(condition.equals("2")){
+                coef2 = bet2.get(j).getKoef1();
+                team2 = bet2.get(j).getTeam1();
+            }
+            if (Math.pow(bet1.get(i).getKoef1(), -1) + Math.pow(coef2, -1) < 1 &&
+                    bet1.get(i).getKoef1() != coef2) {
 
                 double win1 = 0, win2 = 0, stavkaonSecond = 0, stavkaonFirst = 0, priz1 = 0, priz2 = 0;
 
@@ -30,14 +38,14 @@ public class MaxLeftRight {
                     stavkaonFirst = g;
                     win1 = bet1.get(i).getKoef1() * stavkaonFirst;
                     stavkaonSecond = win1 - stavkaonFirst;
-                    win2 = bet2.get(j).getKoef2() * stavkaonSecond;
+                    win2 = coef2 * stavkaonSecond;
                 }
-                while (win1 >= stavkaonFirst + stavkaonSecond && stavkaonFirst + stavkaonSecond <= win2 && Math.abs(win2 - win1) > 1) {
-                    stavkaonSecond = stavkaonSecond - 0.5;
-                    win2 = bet2.get(j).getKoef2() * stavkaonSecond;
+                while (win1 >= stavkaonFirst + stavkaonSecond && stavkaonFirst + stavkaonSecond <= win2 && Math.abs(win2 - win1) > 0.1) {
+                    stavkaonSecond = stavkaonSecond - 0.01;
+                    win2 = coef2 * stavkaonSecond;
                 }
                 strline2 = bet1.get(i).getSite() + " " + bet2.get(j).getSite() + " " +
-                        bet1.get(i).getTeam1() + " " + bet2.get(j).getTeam2();
+                        bet1.get(i).getTeam1() + " " + team2;
                 while ((strLine = br.readLine()) != null) {
                     if (strLine.equals(strline2)) {
                         proverka = false;
@@ -52,19 +60,19 @@ public class MaxLeftRight {
                 if (proverka && percent > 1) {
                     fileout1.printf(date.toString() + "\n" +
                             bet1.get(i).getPage() + "\n" + bet2.get(j).getPage() + "\n" +
-                            bet1.get(i).getTeam1() + "\t" + bet2.get(j).getTeam2() + "\n" +
-                            bet1.get(i).getKoef1() + "\t" + bet2.get(j).getKoef2() + "\n" +
+                            bet1.get(i).getTeam1() + "\t" + team2 + "\n" +
+                            bet1.get(i).getKoef1() + "\t" + coef2 + "\n" +
                             stavkaonSecond + "\t" + stavkaonFirst + "\n" +
                             "Победа:" + priz1 + "\t" + priz2 + "\n");
                     System.out.println("EEEEE BOYYYYYYYYYYYYYYYYYYYYYY");
                     fileProv.printf(
                             bet1.get(i).getSite() + " " + bet2.get(j).getSite() + " " +
-                                    bet1.get(i).getTeam1() + " " + bet2.get(j).getTeam2() + "\n");
+                                    bet1.get(i).getTeam1() + " " + team2 + "\n");
 
                     JsonOut.setJson(bet1.get(i).getSite(), bet2.get(j).getSite(),
                             bet1.get(i).getPage(), bet2.get(j).getPage(),
-                            bet1.get(i).getTeam1(), bet2.get(j).getTeam2(),
-                            bet1.get(i).getKoef1(), bet2.get(j).getKoef2(),
+                            bet1.get(i).getTeam1(), team2,
+                            bet1.get(i).getKoef1(), coef2,
                             stavkaonFirst, stavkaonSecond,
                             percent);
                 }

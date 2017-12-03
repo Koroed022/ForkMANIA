@@ -20,12 +20,14 @@ public class CountMoney {
             PrintWriter fileProv = new PrintWriter(writer2, true);
             ArrayList<BetCreate> Bets1 = bet1;
             ArrayList<BetCreate> Bets2 = bet2;
-            String name1,
-                    name2;
+            String name1, name2;
             for (int i = 0; i < Bets1.size(); i++) {
                 for (int j = 0; j < Bets2.size(); j++) {
                     if (Bets1.get(i).getTeam1().equals(Bets2.get(j).getTeam1()) && Bets1.get(i).getTeam2().equals(Bets2.get(j).getTeam2())) {
                         MaxLeftRight.Max2(Bets1, Bets2, "1", i, j);
+                    }
+                    if (Bets1.get(i).getTeam1().equals(Bets2.get(j).getTeam2()) && Bets1.get(i).getTeam2().equals(Bets2.get(j).getTeam1())) {
+                        MaxLeftRight.Max2(Bets1, Bets2, "2", i, j);
                     }
                 }
             }
@@ -147,9 +149,9 @@ public class CountMoney {
             win1 = coef1 * stavkaonFirst;
             stavkaonSecond = win1 - stavkaonFirst;
             win2 = coef2 * stavkaonSecond;
-            while(win1 >= stavkaonFirst + stavkaonSecond && stavkaonFirst + stavkaonSecond <= win2 && Math.abs(win2 - win1) > 1)
+            while(win1 >= stavkaonFirst + stavkaonSecond && stavkaonFirst + stavkaonSecond <= win2 && Math.abs(win2 - win1) > 0.1)
             {
-                stavkaonSecond = stavkaonSecond - 0.5;
+                stavkaonSecond = stavkaonSecond - 0.01;
                 win2 = coef2 * stavkaonSecond;
             }
             priz1 = win1 - (stavkaonFirst + stavkaonSecond);
