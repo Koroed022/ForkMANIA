@@ -11,67 +11,29 @@ import java.awt.event.ActionListener;
 
 public class FormClass extends JFrame  {
     private JPanel panel;
-    private JButton addKeyButton;
-    public JTextArea WordArea;
-    private JLabel stopWord;
-    private JTextArea maxArea;
+    private JButton forecastButton;
+    private JTextArea commandArea1;
+    private JTextArea commandArea2;
+    private JTextArea resulArea;
     private JLabel label1;
-    private JTextArea AreaCoef2;
     private JLabel label2;
-    private JTextArea cursArea;
-    private JLabel cursDollar;
-
-    //public static FormClass instance ;
-    public static String key = null;
-    public static String max = null;
-    public static String coef = null;
-    public static String dollarCurs = null;
-    public static int maxI = 100;
-    public double coef1,coef2;
+    public static String com1 = null,com2 = null;
     public static FormClass dialog;
+
     public FormClass() {
-
         try {
-            setContentPane(panel);
+            super.setContentPane(panel);
             //setModal(true);
-            getRootPane().setDefaultButton(addKeyButton);
-            try {
-                Document doc = Jsoup
-                        .connect("https://www.calc.ru/kurs-USD-RUB.html")
-                        // .cookies(login.cookies()) //use this with any page you parse. it will log you in
-                        .get();
-                dollarCurs = doc.toString().split("1 USD = ")[1].split(" RUB</strong>\n" + "           <br> \n" + "           <strong>1 RUB")[0];
-                //System.out.println(doc.toString());
-                cursArea.setText("1 USD = " + dollarCurs);
-            } catch (Exception erGo) {
-                System.out.println(erGo.toString());
-            }
+            super.getRootPane().setDefaultButton(forecastButton);
 
 
-            addKeyButton.addActionListener(new ActionListener() {
+            forecastButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    key = WordArea.getText();
-                    coef = AreaCoef2.getText();
-                    max = maxArea.getText();
-                    if (!key.equals("")) {
-                        if (!coef.equals("")) {
-                            coef1 = Double.parseDouble(max);
-                            coef2 = Double.parseDouble(coef);
-                            WordArea.setText(CountMoney.TwoCoefs(coef1, coef2, Integer.parseInt(key)));
-                        } else {
-                            maxI = Integer.parseInt(max);
-                            try {
-                                Scanning scanning = new Scanning();
-                                Thread scan = new Thread(scanning);
-                                scan.start();
-                            } catch (Exception e1) {
-                                System.out.println(e1.toString());
-                            }
-
-                        }
-                    } else {
-                        AreaCoef2.setText("В рублях: " + Double.parseDouble(max) * Double.parseDouble(dollarCurs));
-                    }
+                    com1 = commandArea1.getText();
+                    com2 = commandArea2.getText();
+                    if (com1.equals("") || com2.equals(""))
+                        resulArea.setText("Введите две команды");
+                    //resulArea.setText("Победит команда: " + "");//вставить победителя из стратегий
                 }
             });
             setDefaultCloseOperation(JDialog.EXIT_ON_CLOSE);
@@ -85,7 +47,7 @@ public class FormClass extends JFrame  {
         dialog = new FormClass();
 
         dialog.pack();
-        dialog.setTitle("Start");
+        dialog.setTitle("Forecast Bot");
         dialog.setLocation(500,300);
         dialog.setSize(500,300);
         dialog.setLocationByPlatform(true);
